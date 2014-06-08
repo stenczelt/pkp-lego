@@ -51,9 +51,9 @@ Block math:
 .. math::
 
    \begin{aligned}
-   \dot{x} &amp; = \sigma(y-x) \\
-   \dot{y} &amp; = \rho x - y - xz \\
-   \dot{z} &amp; = -\beta z + xy
+   \dot{x} &=  \sigma(y-x) \\
+   \dot{y} &= \rho x - y - xz \\
+   \dot{z} &= -\beta z + xy
    \end{aligned}
 
 
