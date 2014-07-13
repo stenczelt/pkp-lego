@@ -1,3 +1,7 @@
+#!/bin/bash
+
+set -e
+
 echo "### RUNNING DEPLOY SCRIPT..."
 cd /home/git/pkp-lego-build
 echo "### UPDATING GIT REPOSITORY..."
