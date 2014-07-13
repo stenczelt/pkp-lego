@@ -5,6 +5,7 @@ set -e
 echo "### RUNNING DEPLOY SCRIPT..."
 cd /home/git/pkp-lego-build
 echo "### UPDATING GIT REPOSITORY..."
+unset GIT_DIR
 git pull origin master
 echo "### BUILDING DOCUMENTATION HTML..."
 make html
