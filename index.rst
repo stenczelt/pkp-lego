@@ -6,6 +6,8 @@
 Welcome to PKP Lego Robot's documentation!
 ==========================================
 
+GIT HOOK TESTING
+
 Instructors:
 
 * **Dr Gábor Csányi** -- gc121 [AT] cam.ac.uk
