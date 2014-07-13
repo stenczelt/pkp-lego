@@ -1,0 +1,9 @@
+# Building the documentation locally
+
+Check out the repo, and build by typing `make html`. The result will be in the `_build` folder.
+
+
+
+# Pushing to the public instance
+
+Instructions to push to PWF public html should go here
