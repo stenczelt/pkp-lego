@@ -6,7 +6,7 @@
 Welcome to PKP Lego Robot's documentation!
 ==========================================
 
-GIT HOOK TESTING
+GIT HOOK TESTING 2
 
 Instructors:
 
