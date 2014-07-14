@@ -120,7 +120,7 @@ Week 4
 * Project work
 * Presentation preparation
 * Inventory preparation
-* Final presentations -- **Time TBD**
+* **Final presentations -- July 24 15:25–16:40**
 
 ====================== ============= ============= ============= ============= ============= 
 Week 4                  July 21       July 22       July 23       July 24       July 25
