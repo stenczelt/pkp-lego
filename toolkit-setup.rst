@@ -62,7 +62,7 @@ The brick regularly broadcasts information about its connection. If you're on Li
 
 	nc -ulk 3015
 
-To open the wireless connection in Matlab, you first have to add a java class file ``OutputStreamSend.class`` to the Matlab *java classpath*. This file is in the zip you downloaded, at the path ``<EV3>``. Add this file to the Matlab java classpath by typing ``javaaddpath(C:\path\to\OutputStreamSend.class)``. Now this java file is available for use.
+To open the wireless connection in Matlab, you first have to add a java class file ``OutputStreamSend.class`` to the Matlab *java classpath*. This file is in the zip you downloaded, at the path ``<EV3>``. Add this file to the Matlab java classpath by typing ``javaaddpath('C:\path\to\OutputStreamSend.class')``. Now this java file is available for use.
 
 Type the following in Matlab::
 
