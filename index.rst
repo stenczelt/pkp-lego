@@ -11,6 +11,10 @@ Instructors:
 * **Dr Gábor Csányi** -- gc121 [AT] cam.ac.uk
 * **Mr Miklós A Danka** -- mad51 [AT] cam.ac.uk
 
+.. image:: resources/picture-lego-pid.jpg
+   :width: 100 %
+   :align: center
+
 Group mailing list: **pkp-lego-robotics-2014 [AT] googlegroups.com**, https://groups.google.com/forum/#!forum/pkp-lego-robotics-2014
 
 Contents:
