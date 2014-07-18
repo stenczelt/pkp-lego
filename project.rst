@@ -58,17 +58,16 @@ Note that the primary purpose of plans is not to follow them word by word, but r
 Final Report and Presentation
 ------------------------------------------------
 
-You will finish the course by preparing a final project report and presenting your work to the rest of the class. **You will be graded based on your report and presentation.**
+You will finish the course by preparing a final project report and presenting your work to the rest of the class. **You will be graded based on attendance, your report, and your presentation.**
 
 The format of the final report is not specified, but at a minimum, it should include the following:
 
 * Your original plan and what you achieved of it
-* Documentation of your solution, including:
+* Documentation of your final construct (the construct architecture and the working of the MATLAB program)
+* The challenges you encountered and the design decisions you made; the evolution of your construct and program
 
-  * the LEGO construct,
-  * the MATLAB program,
-  * how they tie together and achieve the goal
+    * This is a really important part of the report: it shows that you thought about your decisions and you learnt from what you observed. Did you have a construct that didn't work the first time, that was inaccurate the second time, but worked the third time? Did you have some code which returned noisy signal the first time but a transformation has fixed it? Write about it: the learning process is the most interesting part.
 
 * The biggest challenges you encountered and the lessons you learnt ("what would I do differently next time?")
 
-The presentation will consist of 3 minutes of presentation (potentially including a demo) and 2 minutes of Q&A.
+The presentation will consist of 3 minutes of presentation (potentially including a very short demo) and 2 minutes of Q&A.
