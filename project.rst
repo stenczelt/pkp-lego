@@ -68,6 +68,4 @@ The format of the final report is not specified, but at a minimum, it should inc
 
     * This is a really important part of the report: it shows that you thought about your decisions and you learnt from what you observed. Did you have a construct that didn't work the first time, that was inaccurate the second time, but worked the third time? Did you have some code which returned noisy signal the first time but a transformation has fixed it? Write about it: the learning process is the most interesting part.
 
-* The biggest challenges you encountered and the lessons you learnt ("what would I do differently next time?")
-
 The presentation will consist of 3 minutes of presentation (potentially including a very short demo) and 2 minutes of Q&A.
