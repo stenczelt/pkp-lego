@@ -51,14 +51,7 @@ These milestones are great because:
 
 As part of your project plan, set some milestones. Also include an estimate of when you plan to be ready with each milestone. (Don't worry, we'll revisit the time estimates each week.) **Make sure that you submit and get your milestones signed off by the instructors.**
 
-
-
-Weekly Progress Check
-------------------------
-
 Note that the primary purpose of plans is not to follow them word by word, but rather to give you a mental model of how you're doing with your project. In this spirit, you should regularly revisit your milestones to understand whether you're project is tracking and to see where you should alter your plan.
-
-At the end of weeks 2 and 3, prepare a short written review of what milestones you have achieved and whether you need to alter your plan. **Submit this written progress check to the instructors by the end of week 2 and week 3.**
 
 
 
