@@ -43,7 +43,7 @@ There are a few deliverables throughout the course that you should submit to the
 
 #. Project idea and milestones -- July 9 (Friday)
 #. Final report (see :doc:`project`) -- July 23 (Wednesday) end of day
-#. Inventories (see :doc:`inventory`) -- July 23 (Wednesday) end of day
+#. Inventories (see :doc:`inventory`) -- July 24 (Thursday) end of day
 #. Presentation -- July 24 (Thursday)
 
 
