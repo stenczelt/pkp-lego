@@ -134,7 +134,7 @@ You can alter the control flow of your program based on certain conditions. For 
 
 In this case, only one of the two display lines will be executed, depending on whether ``x`` is odd or even.
 
-You don't have to specify and ``else`` branch for your conditional::
+You don't have to specify an ``else`` branch for your conditional::
 
   if a < 0
     disp('a cannot be negative!')
@@ -160,7 +160,7 @@ Functions
 
 Functions are shorthands to use more complex computations. You can define your own functions, but there are also lots and lots of built-in ones in Matlab.
 
-In the below, we explain functions using their *signatures*. For example, the ``size(matrix)`` functions returns the size of a matrix. ``size`` is the *name* of the functions, while ``matrix`` is its only *argument*. You can use functions by specifying their names and supplying appropriate arguments; for example, ``size([1 2 3])``.
+In the below, we explain functions using their *signatures*. For example, the ``size(matrix)`` function returns the size of a matrix. ``size`` is the *name* of the function, while ``matrix`` is its only *argument*. You can use functions by specifying their names and supplying appropriate arguments; for example, ``size([1 2 3])``.
 
 disp(value)
 ~~~~~~~~~~~
