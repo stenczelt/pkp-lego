@@ -3,7 +3,7 @@ Matlab Introduction
 
 Matlab is a programming language and tool designed specifically for science applications. Mathematical constructs and operations, such as vectors and matrix multiplications, are first-order elements of this language.
 
-You will program your EV3 brick using a custom Matlab extension. But before we get to the EV3-specific commands, we'll look at the core Matlab language first.
+You will program your EV3 brick using a custom Matlab extension. But before we get to the EV3-specific commands we'll look at the core Matlab language first.
 
 Let's dive straight into it!
 
@@ -12,7 +12,7 @@ Let's dive straight into it!
 Basics
 --------------------
 
-The computers provided by Pembroke have Matlab installed on them with valid licenses. Note that you won't be able to install Matlab on your personal computer, unless you have your own license.
+The computers provided by Pembroke have Matlab installed on them with valid licenses. Note that you won't be able to install Matlab on your personal computer unless you have your own license.
 
 Matlab gives you an interactive console. Type the following, and observe the results::
 
@@ -42,18 +42,18 @@ Matlab gives you convenient ways to access both single elements and ranges::
   a(1)
   a(2:4)
 
-Similarly, you can create matrices, and access its elements::
+Similarly, you can create matrices and access their elements::
 
   m = [1 2 3 4 5
   6 7 8 9 10
   11 12 13 14 15]
-  m(2,3)    % will show 8
-  m(:,3)    % will show [3; 8; 13]
-  m(2:3,:)  % will show [6 7 8 9 10; 11 12 13 14 15]
+  m(2, 3)    % will show 8
+  m(:, 3)    % will show [3; 8; 13]
+  m(2:3, :)  % will show [6 7 8 9 10; 11 12 13 14 15]
 
 When accessing matrix row/columns, ``:`` without numbers denotes the whole range.
 
-You might have noticed that for everything you type, Matlab echoes the resulting value. You can hide values of intermediate computations by putting semicolon at the end of your expression::
+You might have noticed that for everything you type, Matlab echoes the resulting value. You can hide values of intermediate computations by putting a semicolon at the end of your expression::
 
   a = 13;
   b = 21;
@@ -95,7 +95,7 @@ What happens is that the variable ``i`` takes on the values 1 to 100 in turn, an
     disp(['The number', num2str(x), 'is odd'])
   end
 
-This piece of code tests whether the number ``x`` is even or odd, and displays some text depending on that. Note how we display strings and numbers together by first converting the number to a string, and then combining the strings into a vector.
+This piece of code tests whether the number ``x`` is even or odd, and displays some text depending on that. Note how we display strings and numbers together by first converting the number to a string (``num2str(x)``) and then combining the strings into a vector.
 
 Finally, another useful pair of commands is ``tic`` and ``toc``. ``tic`` resets Matlab's internal stopwatch, while ``toc`` outputs its value. Type ``tic`` and ``toc`` a few times to observe how it works.
 
