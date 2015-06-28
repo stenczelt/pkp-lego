@@ -78,7 +78,7 @@ When you input the letter *u*, the value of the variable ``motorPower`` is incre
 
 Note how the motor power is outputted to the console. First, the number is converted to a string by the ``num2str`` function. This is then combined into a vector of strings using the ``[string1 string2]`` notation. Finally, this vector of strings is passed to the ``disp`` function.
 
-For those interested: the first argument of the ``outputPower`` function is the *usb chain level*. This only matter when you have several bricks chained together via USB cables. In that case you could send commands to other bricks by specifying the appropriate level. Since we will always work with a single brick, the usb chain level should always be 0.
+For those interested: the first argument of the ``outputPower`` function is the *usb chain level*. This only matters when you have several bricks chained together via USB cables. In that case you could send commands to other bricks by specifying the appropriate level. Since we will always work with a single brick, the usb chain level should always be 0.
 
 	*Task:* Implement an input method where you can specify the amount by which the motor power should change.
 
