@@ -31,7 +31,6 @@ Contents:
    :maxdepth: 1
 
    overview
-   forum
    inventory
    matlab-intro
    matlab-reference
