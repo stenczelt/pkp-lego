@@ -42,10 +42,10 @@ Deliverables
 
 There are a few deliverables throughout the course that you should submit to the instructors. They are detailed in the relevant sections, but we collected them into a reference list here for your convenience:
 
-#. Project idea and milestones -- July 9 (Friday)
-#. Final report (see :doc:`project`) -- July 23 (Wednesday) end of day
-#. Inventories (see :doc:`inventory`) -- July 24 (Thursday) end of day
-#. Presentation -- July 24 (Thursday)
+#. Project idea and milestones -- July 3 (Friday)
+#. Final report (see :doc:`project`) -- July 22 (Wednesday) end of day
+#. Inventories (see :doc:`inventory`) -- July 23 (Thursday) end of day
+#. Presentation -- TBD
 
 
 
@@ -60,7 +60,7 @@ Week 1
 * Lessons: PID, low-pass filters
 
 ====================== ============= ============= ============= ============= ============= 
-Week 1                  June 30       July 1        July 2        July 3        July 4
+Week 1                  June 29       June 30       July 1        July 2        July 3
 ====================== ============= ============= ============= ============= ============= 
 **10:25--11:40**                                    Lecture 2
 ---------------------- ------------- ------------- ------------- ------------- ------------- 
@@ -81,15 +81,15 @@ Week 2
 * Project planning
 
 ====================== ============= ============= ============= ============= ============= 
-Week 2                  July 7        July 8        July 9        July 10       July 11
+Week 2                  July 6        July 7        July 8        July 9       July 10
 ====================== ============= ============= ============= ============= ============= 
-**10:25--11:40**                      Seminar B 1   Lecture 4     Seminar B 2   Lecture 6
+**10:25--11:40**        Seminar B 1   Lecture 4     Seminar B 2   Lecture 6
 ---------------------- ------------- ------------- ------------- ------------- ------------- 
-**11:50--13:05**                                    Seminar C 2                 Seminar C 3
+**11:50--13:05**                      Seminar C 2                 Seminar C 3
 ---------------------- ------------- ------------- ------------- ------------- ------------- 
 Lunch
 ---------------------- ------------- ------------- ------------- ------------- ------------- 
-**15:25--16:40**                      Lecture 3     Seminar A 2   Lecture 5     Seminar A 3
+**15:25--16:40**        Lecture 3     Seminar A 2   Lecture 5     Seminar A 3
 ---------------------- ------------- ------------- ------------- ------------- ------------- 
 **16:50--18:05**
 ====================== ============= ============= ============= ============= ============= 
@@ -100,7 +100,7 @@ Week 3
 * Project work
 
 ====================== ============= ============= ============= ============= ============= 
-Week 3                  July 14       July 15       July 16       July 17       July 18
+Week 3                  July 13       July 14       July 15       July 16       July 17
 ====================== ============= ============= ============= ============= ============= 
 **10:25--11:40**        Seminar B 3   Lecture 8     Seminar B 4   Lecture 10    Seminar A 6
 ---------------------- ------------- ------------- ------------- ------------- ------------- 
@@ -119,10 +119,10 @@ Week 4
 * Project work
 * Presentation preparation
 * Inventory preparation
-* **Final presentations -- July 24 15:25–16:40**
+* **Final presentations -- TBD**
 
 ====================== ============= ============= ============= ============= ============= 
-Week 4                  July 21       July 22       July 23       July 24       July 25
+Week 4                  July 20       July 21       July 22       July 23       July 24
 ====================== ============= ============= ============= ============= ============= 
 **10:25--11:40**        Seminar B 6   Lecture 12    Seminar B 7   Seminar B 8
 ---------------------- ------------- ------------- ------------- ------------- ------------- 
