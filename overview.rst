@@ -14,18 +14,19 @@ You will work in teams of 2 throughout the course. You will start by working thr
 
 
 
-Group mailing list
-------------------
+.. comment Group mailing list
 
-We have created a mailing list dedicated to this group. The primary purpose is that you can ask questions and discuss problems and ideas here. Additionally, we (the instructors) are also members of the list and we will contribute to the discussion when it is helpful.
-
-If you're not already a member of the group, request to join by opening the `PKP Lego Robotics 2014 Google Group <https://groups.google.com/forum/#!forum/pkp-lego-robotics-2014>`_.
-
-Don't forget to set your email preferences so that you get immediate notifications for every post.
-
-You can email the list by writing to pkp-lego-robotics-2014 [AT] googlegroups.com.
-
-You can also access the mailing list as a forum directly from these docs on the :doc:`forum` page.
+    ------------------
+    
+    We have created a mailing list dedicated to this group. The primary purpose is that you can ask questions and discuss problems and ideas here. Additionally, we (the instructors) are also members of the list and we will contribute to the discussion when it is helpful.
+    
+    If you're not already a member of the group, request to join by opening the `PKP Lego Robotics 2014 Google Group <https://groups.google.com/forum/#!forum/pkp-lego-robotics-2014>`_.
+    
+    Don't forget to set your email preferences so that you get immediate notifications for every post.
+    
+    You can email the list by writing to pkp-lego-robotics-2014 [AT] googlegroups.com.
+    
+    You can also access the mailing list as a forum directly from these docs on the :doc:`forum` page.
 
 
 
