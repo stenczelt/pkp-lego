@@ -6,7 +6,7 @@
 Welcome to PKP Lego Robot's documentation!
 ==========================================
 
-.. raw:: html
+.. comment raw:: html
 
     <div style="text-align: center; color: red; font-size: 24px; font-weight: bold;">
       Report deadline: Wednesday (July 23) end-of-day<br />
@@ -23,7 +23,7 @@ Instructors:
    :width: 100 %
    :align: center
 
-Group mailing list: **pkp-lego-robotics-2014 [AT] googlegroups.com**, https://groups.google.com/forum/#!forum/pkp-lego-robotics-2014
+.. comment Group mailing list: **pkp-lego-robotics-2014 [AT] googlegroups.com**, https://groups.google.com/forum/#!forum/pkp-lego-robotics-2014
 
 Contents:
 
