@@ -18,6 +18,7 @@ Instructors:
 
 * **Dr Gábor Csányi** -- gc121 [AT] cam.ac.uk
 * **Mr Miklós A Danka** -- mad51 [AT] cam.ac.uk
+* **Mr Patrick Szmucer** -- pjs87 [AT] cam.ac.uk
 
 .. image:: resources/picture-lego-pid.jpg
    :width: 100 %
