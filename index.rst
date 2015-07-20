@@ -6,12 +6,12 @@
 Welcome to PKP Lego Robot's documentation!
 ==========================================
 
-.. comment raw:: html
+.. raw:: html
 
     <div style="text-align: center; color: red; font-size: 24px; font-weight: bold;">
-      Report deadline: Wednesday (July 23) end-of-day<br />
-      Presentation time: Thursday (July 24) 15:25–16:40<br />
-      Inventory deadline: Thursday (July 24) end-of-day<br />
+      Report deadline: Thursday (July 23) end-of-day<br />
+      Inventory deadline: Thursday (July 23) end-of-day<br />
+      Presentation&demo time: Friday (July 24) 12:30–14:30<br />
     </div>
 
 Instructors:
