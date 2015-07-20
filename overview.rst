@@ -45,7 +45,7 @@ There are a few deliverables throughout the course that you should submit to the
 #. Project idea and milestones -- July 7 (Wednesday) the latest
 #. Final report (see :doc:`project`) -- July 22 (Wednesday) end of day
 #. Inventories (see :doc:`inventory`) -- July 23 (Thursday) end of day
-#. Presentation -- TBD
+#. Presentation -- July 24 (Friday) 12:30-14:30
 
 
 
@@ -119,7 +119,7 @@ Week 4
 * Project work
 * Presentation preparation
 * Inventory preparation
-* **Final presentations -- TBD**
+* **Final presentations -- July 24 12:30-14:30**
 
 ====================== ============= ============= ============= ============= ============= 
 Week 4                  July 20       July 21       July 22       July 23       July 24
