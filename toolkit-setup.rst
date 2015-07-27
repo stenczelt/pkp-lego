@@ -1,4 +1,4 @@
-Setting up the EV3 Matlab Toolkit
+EV3 Matlab Toolkit - Setup
 =================================
 
 You will program your EV3 brick using a custom Matlab extension from the Queensland University of Technology. Their information on the library can be found on the `QUT EV3 Matlab toolkit <https://wiki.qut.edu.au/display/cyphy/QUT+EV3+MATLAB+toolkit>`_ page: use this page for reference. Here we will give you a quick introduction to the library.
@@ -8,11 +8,9 @@ You will program your EV3 brick using a custom Matlab extension from the Queensl
 Getting the library
 --------------------
 
-You can get the most recent version as a zip file on the QUT website: `zip <https://wiki.qut.edu.au/download/attachments/172135780/EV3.zip?version=1&modificationDate=1391352088000&api=v2>`_.
+You can download a locally cached zip here: :download:`EV3-2014-07-16.zip<resources/EV3-2014-07-16.zip>`.
 
-Alternatively, you can download a locally cached version: :download:`EV3-2014-06-08.zip<resources/EV3-2014-06-08.zip>`.
-
-Unzip this folder (for example, to your home directory). Take note of the path (such as ``/Users/my-username/EV3``). In this documentation, we will reference this path as ``<EV3>``.
+Unzip this folder (for example, to your home directory). Take note of the path (such as ``C:\pkp-lego\EV3``). In this documentation, we will reference this path as ``<EV3>``.
 
 
 
@@ -23,6 +21,7 @@ The library you downloaded is a collection of Matlab files. You can use this ext
 
 Go to **File > Set Path** and add the ``<EV3>`` path to the Matlab path.
 
+On some installations of Matlab, this might require Administrator privileges, so if you get this error, and you don't have admin rights, then simply keep all your own files in the same ``<EV3>`` directory, and it should all work - the current directory is always included on the path. 
 
 
 Connecting to the EV3 Brick
@@ -49,9 +48,9 @@ WiFi
 
 Wireless connection works by connecting both your computer and the EV3 brick to the same wireless network. The brick isn't by default capable of connecting to wireless networks: it requires a Netgear dongle. Plug in the dongle through the USB port on the EV3, and restart the brick.
 
-On the EV3 menu, go to **Options > WiFi > Connections**. Select the wireless network you want to connect to, choose the encyption type, and enter the password. Note that the capitalization matters. Take note of the brick's IP address by going to **Options > WiFi > <your-connection>**.
+On the EV3 menu, go to **Options > WiFi > Connections**. Select the wireless network you want to connect to, choose the encryption type, and enter the password. **We set up a dedicated wireless network for this course, named "PEM-Lego". There is no password, so for the Encryption, select "None"** Note that the capitalization matters. Take note of the brick's IP address by going to **Options > WiFi > <your-connection>**.
 
-You can confirm that your connection works by opening a Terminal on your computer and typing ``ping <brick-ip-address>``. The output should look like the following::
+On Linux/Mac, open a Terminal. On Windows, go to **Start > Run** and type **cmd**. You can confirm that your connection works by typing ``ping <brick-ip-address>``. The output should look like the following::
 
 	PING 192.168.1.82 (192.168.1.82): 56 data bytes
 	64 bytes from 192.168.1.82: icmp_seq=0 ttl=64 time=61.894 ms
@@ -59,13 +58,11 @@ You can confirm that your connection works by opening a Terminal on your compute
 	64 bytes from 192.168.1.82: icmp_seq=2 ttl=64 time=6.664 ms
 	64 bytes from 192.168.1.82: icmp_seq=3 ttl=64 time=6.266 ms
 
-The brick regularly broadcasts information about its connection. To observe this, type the following to the Terminal::
+The brick regularly broadcasts information about its connection. If you're on Linux/Mac, you can observe this by typing the following to the Terminal::
 
 	nc -ulk 3015
 
-Take note of the brick serial number.
-
-To open the wireless connection in Matlab, you first have to add a java class file ``OutputStreamSend.class`` to the Matlab *java classpath*. This file is in the zip you downloaded, at the path ``<EV3>``. Add this file to the Matlab java classpath by typing ``javaaddpath(/path/to/OutputStreamSend.class)``. Now this java file is available for use.
+To open the wireless connection in Matlab, you first have to add a java class file ``OutputStreamSend.class`` to the Matlab *java classpath*. This file is in the zip you downloaded, at the path ``<EV3>``. Add this file to the Matlab java classpath by typing ``javaaddpath('C:\path\to\OutputStreamSend.class')``. Now this java file is available for use.
 
 Type the following in Matlab::
 
