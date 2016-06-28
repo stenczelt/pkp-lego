@@ -19,7 +19,7 @@ Adding the library to Matlab
 
 The library you downloaded is a collection of Matlab files. You can use this extension by including its files *on the path* so that they become available in your normal code.
 
-Go to **File > Set Path** and add the ``<EV3>`` path to the Matlab path.
+Under the Home ribbon and the Environment tab, go to **Set Path** and add the ``<EV3>`` path to the Matlab path.
 
 On some installations of Matlab, this might require Administrator privileges, so if you get this error, and you don't have admin rights, then simply keep all your own files in the same ``<EV3>`` directory, and it should all work - the current directory is always included on the path. 
 

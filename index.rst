@@ -17,14 +17,13 @@ Welcome to PKP Lego Robot's documentation!
 Instructors:
 
 * **Dr Gábor Csányi** -- gc121 [AT] cam.ac.uk
-* **Mr Miklós A Danka** -- mad51 [AT] cam.ac.uk
-* **Mr Patrick Szmucer** -- pjs87 [AT] cam.ac.uk
+* **Mr Matthew Coates** -- mc955 [AT] cam.ac.uk
 
 .. image:: resources/picture-lego-pid.jpg
    :width: 100 %
    :align: center
 
-.. comment Group mailing list: **pkp-lego-robotics-2014 [AT] googlegroups.com**, https://groups.google.com/forum/#!forum/pkp-lego-robotics-2014
+.. Group mailing list: **pkp-lego-robotics-2014 [AT] googlegroups.com**, https://groups.google.com/forum/#!forum/pkp-lego-robotics-2016-google-group
 
 Contents:
 
