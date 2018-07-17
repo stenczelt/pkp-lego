@@ -17,7 +17,7 @@ Welcome to PKP Lego Robot's documentation!
 Instructors:
 
 * **Dr Gábor Csányi** -- gc121 [AT] cam.ac.uk
-* **Mr Matthew Coates** -- mc955 [AT] cam.ac.uk
+* **Mr Mrinank Sharma** -- ms2314 [AT] cam.ac.uk
 
 .. image:: resources/picture-lego-pid.jpg
    :width: 100 %
