@@ -3,15 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to PKP Lego Robot's documentation!
+Welcome to PKP Lego Robot Course 2018 Documentation!
 ==========================================
 
 .. raw:: html
 
     <div style="text-align: center; color: red; font-size: 24px; font-weight: bold;">
-      Report deadline: Thursday (July 21) end-of-day<br />
-      Inventory deadline: Thursday (July 21) end-of-day<br />
-      Presentation&demo time: Friday (July 22) 9:30–11:30<br />
+      Report deadline: Thursday (August 16) end-of-day<br />
+      Inventory deadline: Thursday (August 16) end-of-day<br />
+      Presentation & demo time: Friday (August 17) 9:30–11:30<br />
     </div>
 
 Instructors:
@@ -23,7 +23,7 @@ Instructors:
    :width: 100 %
    :align: center
 
-.. Group mailing list: **pkp-lego-robotics-2014 [AT] googlegroups.com**, https://groups.google.com/forum/#!forum/pkp-lego-robotics-2016-google-group
+.. Group mailing list: **pembroke-kings-programme-lego-2018 [AT] googlegroups.com**, https://groups.google.com/forum/#!forum/pembroke-kings-programme-lego-2018
 
 Contents:
 
