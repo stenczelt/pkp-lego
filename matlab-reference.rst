@@ -1,5 +1,6 @@
 Matlab Reference
 ==========================================
+Note that this is a very brief introduction to everything you can do with Matlab. The online reference is very detailed (https://www.mathworks.com/help/matlab/)
 
 Variables and assignment
 --------------------------
@@ -73,10 +74,12 @@ Strings
 
 You can create string literals using single quotes::
 
-  'This is a string'
-  myString = 'A string assigned to a variable'
+  'This is a character array'
+  "This is a string"
+  myString = "A string"
+  myCharArray = 'My char array'
 
-
+  Please note that there is actually a difference between a string and a character array! Most of the time it doesn't matter, but sometimes its worth switching which is used if Matlab is throwing an error. 
 
 Command history
 ---------------
@@ -153,6 +156,11 @@ You can use a *for loop* to iterate through a series of values. For example, the
 
 What happens is that the variable ``i`` takes on the values 1 to 100 in turn, and then the body of the loop (the ``disp(i)`` command) is executed with each value.
 
+If you specifically want to iterate over an array, you can use the following syntax::
+
+  for element = my_list
+    % do something with the element!
+  end
 
 
 Functions
@@ -204,4 +212,21 @@ tic, toc
 
 ``tic`` resets Matlab's internal stopwatch. ``toc`` returns its current value.
 
+Making you own function
+~~~~~~~~~~~~~~~~~~~~~~~
+Making your own function is simple. The syntax to create a function is::
+
+  function [y1, ..., yM] = myfun(x1, ..., xM)
+    % do some things 
+  end
+
+Where the function takes input *parameters* ``x1, ..., xM`` and returns the values of ``y1, ... yM``. To call this function, you need to call ``myfun(arguments)``.
+
+If you dont need to return or input anything to the function, you can use the following syntax::
+
+  function myfun()
+    % do some things
+  end
+
+** Note that functions must be saved in a file consisting only of functions. Furthermore, the name of the file must match the name of the first function in the file ** e.g. for above, the file should be called ``myfun.m``.
 

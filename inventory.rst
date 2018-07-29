@@ -26,6 +26,8 @@ At the end of the course you have to make an inventory of the LEGO pieces. The i
 * Core set: :download:`Education Core Inventory.pdf<resources/Education Core Inventory.pdf>`
 * Expansion set: :download:`Education Expansion Inventory.pdf<resources/Education Expansion Inventory.pdf>`
 
+**If you are missing any components which prevent you from progressing on the project, please contact an instructor.**
+
 **At the end of the course, follow these steps:**
 
 #. Print a copy of both the Core and Expansion inventories.

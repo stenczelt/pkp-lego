@@ -48,7 +48,7 @@ WiFi
 
 Wireless connection works by connecting both your computer and the EV3 brick to the same wireless network. The brick isn't by default capable of connecting to wireless networks: it requires a Netgear dongle. Plug in the dongle through the USB port on the EV3, and restart the brick.
 
-On the EV3 menu, go to **Options > WiFi > Connections**. Select the wireless network you want to connect to, choose the encryption type, and enter the password. **We set up a dedicated wireless network for this course, named "PEM-Lego". There is no password, so for the Encryption, select "None"** Note that the capitalization matters. Take note of the brick's IP address by going to **Options > WiFi > <your-connection>**.
+On the EV3 menu, go to **Options > WiFi > Connections**. Select the wireless network you want to connect to, choose the encryption type, and enter the password. **We set up a dedicated wireless network for this course, named "PKP-Lego". There is no password, so for the Encryption, select "None"** Note that the capitalization matters. Take note of the brick's IP address by going to **Options > WiFi > <your-connection>**.
 
 On Linux/Mac, open a Terminal. On Windows, go to **Start > Run** and type **cmd**. You can confirm that your connection works by typing ``ping <brick-ip-address>``. The output should look like the following::
 
@@ -62,7 +62,7 @@ The brick regularly broadcasts information about its connection. If you're on Li
 
 	nc -ulk 3015
 
-To open the wireless connection in Matlab, you first have to add a java class file ``OutputStreamSend.class`` to the Matlab *java classpath*. This file is in the zip you downloaded, at the path ``<EV3>``. Add this file to the Matlab java classpath by typing ``javaaddpath('C:\path\to\OutputStreamSend.class')``. Now this java file is available for use.
+To open the wireless connection in Matlab, you need to give Matlab access to a java class file ``OutputStreamSend.class`` to the Matlab *java classpath*. To do this,  Add this file to the Matlab java classpath by typing ``javaaddpath('<EV3>')``. 
 
 Type the following in Matlab::
 

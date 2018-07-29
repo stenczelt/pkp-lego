@@ -12,7 +12,7 @@ Let's dive straight into it!
 Basics
 --------------------
 
-The computers provided by Pembroke have Matlab installed on them with valid licenses. Note that you won't be able to install Matlab on your personal computer unless you have your own license.
+The computers provided by the Engineering Department have Matlab installed on them with valid licenses. Note that you won't be able to install Matlab on your personal computer unless you have your own license.
 
 Matlab gives you an interactive console. Type the following, and observe the results::
 
@@ -42,6 +42,8 @@ Matlab gives you convenient ways to access both single elements and ranges::
   a(1)
   a(2:4)
 
+**Please note that Matlab, unlike many other languages, uses 1-indexed arrays** i.e. the first element of an array is accessed using ``array_name(1)``.
+
 Similarly, you can create matrices and access their elements::
 
   m = [1 2 3 4 5
@@ -59,7 +61,6 @@ You might have noticed that for everything you type, Matlab echoes the resulting
   b = 21;
   c = a + b;
   c * c
-
 
 
 Intermediate constructs

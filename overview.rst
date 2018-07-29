@@ -42,10 +42,10 @@ Deliverables
 
 There are a few deliverables throughout the course that you should submit to the instructors. They are detailed in the relevant sections, but we collected them into a reference list here for your convenience:
 
-#. Project idea and milestones -- July 5 (Tuesday) the latest
-#. Final report (see :doc:`project`) -- July 21 (Thursday) end of day
-#. Inventories (see :doc:`inventory`) -- July 21 (Thursday) end of day
-#. Presentation -- July 22 (Friday) 9:30-11:30
+#. Project idea and milestones -- August 3 (Tuesday) the latest
+#. Final report (see :doc:`project`) -- August 16 (Thursday) end of day
+#. Inventories (see :doc:`inventory`) -- August 16 (Thursday) end of day
+#. Presentation -- August 15 (Wednesday) 15:15-18:00
 
 
 
@@ -122,7 +122,7 @@ Week 4
 * Project work
 * Presentation preparation
 * Inventory preparation
-* **Final presentations -- July 22 9:30-11:30**
+* **Final presentations -- August 15 (Wednesday) 15:15-18:00**
 
 .. comment   
    ====================== ============= ============= ============= ============= ============= 

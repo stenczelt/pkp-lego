@@ -11,7 +11,7 @@ Welcome to PKP Lego Robot Course 2018 Documentation!
     <div style="text-align: center; color: red; font-size: 24px; font-weight: bold;">
       Report deadline: Thursday (August 16) end-of-day<br />
       Inventory deadline: Thursday (August 16) end-of-day<br />
-      Presentation & demo time: Friday (August 17) 9:30–11:30<br />
+      Presentation & demo time: Wednesday (August 15) 15:15–18:00<br />
     </div>
 
 Instructors:

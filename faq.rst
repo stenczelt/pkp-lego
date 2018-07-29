@@ -6,7 +6,7 @@ Why do I receive a "hidapi write error"?
 
 This normally happens when a USB connection is still open to the brick. Run ``delete(b)`` (where ``b`` is the variable for the brick) to end the connection. If this doesn't work, restart Matlab.
 
-My card doesn't let me in to the New Cellars
+My card doesn't let me in to the Engineering Department / LR3
 --------------------------------------------
 
 First of all, make sure that you're using your plain white Pembroke card. (The Union and the King's cards won't work.)
@@ -28,4 +28,6 @@ If it is not, try the following steps:
 #. Once turned on, plug in the dongle.
 
 The blue light should be on/blinking now, and you should be able to connect.
+
+Sometimes the WiFi can be a little bit temperamental - I often find searching for a connection takes two attempts to find WiFi networks.  
 

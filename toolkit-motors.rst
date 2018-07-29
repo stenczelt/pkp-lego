@@ -43,6 +43,8 @@ Initialisation
 
 As you know already, ``disp`` outputs a string to the Matlab console. We then initiate a connection via USB to the brick. Note that if you want to run this example through wireless, you could follow the instructions in :doc:`toolkit-setup`, and change this block of code to create a wireless connection. Finally, the successful connection is signalled by a beep.
 
+**Important: **if you are trying to use a motor, the motor must also be initialised. This can be done using the command ``b.outputStart(0,Device.MotorA)``. Don't forget to do this - otherwise, the motor will do nothing!
+
 User input
 ~~~~~~~~~~
 
@@ -95,7 +97,7 @@ Tachometer
 	  disp(['> Tachometer: ' num2str(tacho)]);
 	end
 
-When you input the letter *o*, the tachometer value of the motor is read an displayed. This value is the angle relative to the last time the tacho was cleared.
+When you input the letter *o*, the tachometer value of the motor is read an displayed. This value is the angle relative to the last time the tacho was cleared **in degrees**.
 
 	*Task:* Compute the average of all tacho measurements triggered by the input *o*. Output the result when the program is finishing.
 
