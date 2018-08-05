@@ -1,3 +1,4 @@
+clearvars
 % configuration
 brick = Brick('ioType','usb')  % potentially change this to WiFi connection
 layer = 0  % the usb chain layer (always 0 in this course)

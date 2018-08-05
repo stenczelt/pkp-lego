@@ -1,3 +1,4 @@
+clearvars
 brick = Brick('ioType','usb');
 %brick = Brick('ioType','wifi','wfAddr','192.168.1.82','wfPort',5555,'wfSN','001653444434');
 layer = 0;

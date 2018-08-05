@@ -29,5 +29,9 @@ If it is not, try the following steps:
 
 The blue light should be on/blinking now, and you should be able to connect.
 
-Sometimes the WiFi can be a little bit temperamental - I often find searching for a connection takes two attempts to find WiFi networks.  
+Sometimes the WiFi can be a little bit temperamental - I often find searching for a connection takes two attempts to find WiFi networks. 
+
+Matlab keeps crashing!
+-----------------------------------------
+There are often problems with Matlab crashing if a brick hasn't been deleted as is recreated. This can be remedied by ensuring that bricks are deleted e.g. ``delete(b)``. Also, add the command ``clearvars`` at the start of each program. 
 

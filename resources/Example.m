@@ -1,3 +1,4 @@
+clearvars
 % init the connection
 disp('Connecting ... ')
 % brick usb init

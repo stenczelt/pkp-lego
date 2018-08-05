@@ -51,7 +51,7 @@ Sets motor output power.
 
 outputStart(layer, nos)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Starts a motor.
+Starts a motor. Note that is power is negative, the motor direction is reversed. 
 
 ::
 

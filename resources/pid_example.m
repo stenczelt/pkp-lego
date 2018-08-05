@@ -1,3 +1,4 @@
+clearvars
 b = Brick('ioType','usb');
 
 b.outputStop(0,Device.MotorA,0);
