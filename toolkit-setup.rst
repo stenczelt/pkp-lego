@@ -90,3 +90,22 @@ You can end your connection by typing::
 	delete(b)
 
 Here, ``b`` is the variable for the brick to which you connected.
+
+
+An Important Note: Reliability & Robustness
+-------------------------------------------
+The library that is used to control the EV3 brick is by no means perfect. For example, common issues found include:
+
+* Matlab keeps crashing! 
+* Programs behave differently each time they are run!
+
+These two problems can be solved in the software directly - you **must ensure that once you have finished with a ``brick object``, it is deleted** (e.g. you cannot create a new ``brick`` if an existing connection already exists - Matlab will crash). It is also a good idea to clear all local variables at the **start** of every program using the command ``clearvars`` - this helps to ensure that the program does the same thing every time. 
+
+In addition, the hardware is not perfect. All sensors have noise in their readings e.g. the colour sensor sometimes stops reading the right color (for a moment or so). 
+
+Therefore, it is **incredibly important** to design your functions and systems to be reliable and robust as possible. In addition to the steps mentioned above, some methods of doing this could include:
+
+* Time averaging sensor readings. 
+* Using the motor tachometer rather than using time delays. 
+
+[Many more methods are possible].
