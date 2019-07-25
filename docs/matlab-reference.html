@@ -1,0 +1,436 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Matlab Reference &mdash; PKP Lego Robotics 2.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/lego-designer.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="_static/mathjax-v2.3-9-g78ea6af/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="EV3 Matlab Toolkit - Setup" href="toolkit-setup.html" />
+    <link rel="prev" title="Matlab Introduction" href="matlab-intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PKP Lego Robotics
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Course Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inventory.html">LEGO Inventory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matlab-intro.html">Matlab Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Matlab Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#variables-and-assignment">Variables and assignment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ans">ans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#semicolon">Semicolon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vectors-and-matrices">Vectors and matrices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#strings">Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#command-history">Command history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#terminating-scripts">Terminating scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#equality-operator">Equality operator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comments">Comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conditionals-ifs">Conditionals (ifs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#for-loops">For loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#disp-value">disp(value)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mod-number-divisor">mod(number, divisor)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#randi-range-rows-columns">randi(range, rows, columns)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#size-matrix">size(matrix)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plot-vector">plot(vector)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tic-toc">tic, toc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#making-you-own-function">Making you own function</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="toolkit-setup.html">EV3 Matlab Toolkit - Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="toolkit-motors.html">EV3 Matlab Toolkit - Motors Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="toolkit-sensors.html">EV3 Matlab Toolkit - Sensors Introduction and Low-Pass Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="toolkit-motors-reference.html">EV3 Matlab Toolkit - Motors Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="toolkit-sensors-reference.html">EV3 Matlab Toolkit - Sensors Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pid.html">PID Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Project Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PKP Lego Robotics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Matlab Reference</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/matlab-reference.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="matlab-reference">
+<h1>Matlab Reference<a class="headerlink" href="#matlab-reference" title="Permalink to this headline">¶</a></h1>
+<p>Note that this is a very brief introduction to everything you can do with Matlab. The online reference is very detailed (<a class="reference external" href="https://www.mathworks.com/help/matlab/">https://www.mathworks.com/help/matlab/</a>)</p>
+<div class="section" id="variables-and-assignment">
+<h2>Variables and assignment<a class="headerlink" href="#variables-and-assignment" title="Permalink to this headline">¶</a></h2>
+<p>Variables store data, such as numbers, vectors, matrices, strings. You assign values to variables by the <code class="docutils literal notranslate"><span class="pre">=</span></code> operator:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">myVar</span> <span class="p">=</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>You can reassign variables:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">myVar</span> <span class="p">=</span> <span class="s">&#39;I love Matlab&#39;</span>
+</pre></div>
+</div>
+<p>You can use variables (and their values) by simply using their names:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="nb">disp</span><span class="p">(</span><span class="n">myVar</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ans">
+<h2>ans<a class="headerlink" href="#ans" title="Permalink to this headline">¶</a></h2>
+<p>The special variable <code class="docutils literal notranslate"><span class="pre">ans</span></code> contains the value of the last evaluated expression. You can reference it as any other variable, but you cannot assign values to it.</p>
+</div>
+<div class="section" id="semicolon">
+<h2>Semicolon<a class="headerlink" href="#semicolon" title="Permalink to this headline">¶</a></h2>
+<p>If you put a semicolon at the end of a line, the result of the expression is hidden:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="p">=</span> <span class="mi">4</span><span class="p">;</span>  <span class="c">% doesn&#39;t display anything</span>
+<span class="n">b</span> <span class="p">=</span> <span class="mi">3</span>   <span class="c">% prints 3</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="vectors-and-matrices">
+<h2>Vectors and matrices<a class="headerlink" href="#vectors-and-matrices" title="Permalink to this headline">¶</a></h2>
+<p>You can build matrices by the following syntax:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="p">=</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span>
+<span class="mi">5</span> <span class="mi">6</span> <span class="mi">7</span> <span class="mi">8</span>
+<span class="mi">9</span> <span class="mi">10</span> <span class="mi">11</span> <span class="mi">12</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>This creates a <span class="math notranslate nohighlight">\(3 \times 4\)</span> matrix.</p>
+<p>Note that in other languages, such as C, whitespace (such as newlines) don’t matter. In Matlab, it does make a difference. For example, the following command creates a <span class="math notranslate nohighlight">\(1 \times 12\)</span> matrix (a vector), which is different from the one above:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">m2</span> <span class="p">=</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span> <span class="mi">7</span> <span class="mi">8</span> <span class="mi">9</span> <span class="mi">10</span> <span class="mi">11</span> <span class="mi">12</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>A matrix which has only one row or one column is called a vector. You can create row and column vectors with the following syntax:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">vRow</span> <span class="p">=</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">vColumn</span> <span class="p">=</span> <span class="p">[</span><span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span><span class="p">]</span>
+<span class="n">vColumn2</span> <span class="p">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">;</span> <span class="mi">2</span><span class="p">;</span> <span class="mi">3</span><span class="p">]</span>  <span class="c">% this also creates a column vector</span>
+</pre></div>
+</div>
+<p>You can access elements by specifying the row and column indices, or ranges:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">vRow</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>    <span class="c">% prints 2</span>
+<span class="n">vRow</span><span class="p">(</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">)</span>  <span class="c">% prints [2 3]</span>
+<span class="n">m</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>    <span class="c">% prints 7 (2nd row, 3rd column)</span>
+<span class="n">m</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span><span class="mi">4</span><span class="p">)</span>  <span class="c">% prints [7 8]</span>
+<span class="n">m</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">:)</span>    <span class="c">% prints [5 6 7 8]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="strings">
+<h2>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h2>
+<p>You can create string literals using single quotes:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="s">&#39;This is a character array&#39;</span>
+&quot;<span class="n">This</span> <span class="n">is</span> <span class="n">a</span> <span class="n">string</span>&quot;
+<span class="n">myString</span> <span class="p">=</span> &quot;<span class="n">A</span> <span class="n">string</span>&quot;
+<span class="n">myCharArray</span> <span class="p">=</span> <span class="s">&#39;My char array&#39;</span>
+
+<span class="n">Please</span> <span class="n">note</span> <span class="n">that</span> <span class="n">there</span> <span class="n">is</span> <span class="n">actually</span> <span class="n">a</span> <span class="n">difference</span> <span class="n">between</span> <span class="n">a</span> <span class="n">string</span> <span class="n">and</span> <span class="n">a</span> <span class="n">character</span> <span class="n">array</span>! <span class="n">Most</span> <span class="n">of</span> <span class="n">the</span> <span class="n">time</span> <span class="n">it</span> <span class="n">doesn</span><span class="o">&#39;</span><span class="n">t</span> <span class="n">matter</span><span class="p">,</span> <span class="n">but</span> <span class="n">sometimes</span> <span class="n">its</span> <span class="n">worth</span> <span class="n">switching</span> <span class="n">which</span> <span class="n">is</span> <span class="n">used</span> <span class="k">if</span> <span class="n">Matlab</span> <span class="n">is</span> <span class="n">throwing</span> <span class="n">an</span> <span class="n">error</span><span class="p">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="command-history">
+<h2>Command history<a class="headerlink" href="#command-history" title="Permalink to this headline">¶</a></h2>
+<p>Use the up and down arrows to browse and edit your command history. This way you don’t have to always retype all commands.</p>
+</div>
+<div class="section" id="terminating-scripts">
+<h2>Terminating scripts<a class="headerlink" href="#terminating-scripts" title="Permalink to this headline">¶</a></h2>
+<p>If you’re running a script or writing a command and you want to exit it, hit Ctrl+C on the keyboard.</p>
+</div>
+<div class="section" id="equality-operator">
+<h2>Equality operator<a class="headerlink" href="#equality-operator" title="Permalink to this headline">¶</a></h2>
+<p>To compare two values for equality, we use the <code class="docutils literal notranslate"><span class="pre">==</span></code> operator. For example:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span>
+  <span class="nb">disp</span><span class="p">(</span><span class="s">&#39;Equal!&#39;</span><span class="p">)</span>
+<span class="k">else</span>
+  <span class="nb">disp</span><span class="p">(</span><span class="s">&#39;Not equal&#39;</span><span class="p">)</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+<p>Note that <code class="docutils literal notranslate"><span class="pre">==</span></code> is different from <code class="docutils literal notranslate"><span class="pre">=</span></code>. The former tests for equality; the latter is the assignment operator.</p>
+<p>You can also test for inequality using the <code class="docutils literal notranslate"><span class="pre">~=</span></code> operator.</p>
+</div>
+<div class="section" id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
+<p>Comments are part of a Matlab program that are completely ignored by the Matlab interpreter. However, they are indispensable for explaining and documenting your code.</p>
+<p>You can add comments using the <code class="docutils literal notranslate"><span class="pre">%</span></code> sign:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="c">% This is a comment and it doesn&#39;t affect the program flow</span>
+<span class="n">a</span> <span class="p">=</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">]</span>  <span class="c">% I can even add comments to the ends of lines</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="conditionals-ifs">
+<h2>Conditionals (ifs)<a class="headerlink" href="#conditionals-ifs" title="Permalink to this headline">¶</a></h2>
+<p>You can alter the control flow of your program based on certain conditions. For example:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="nb">mod</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+  <span class="nb">disp</span><span class="p">([</span><span class="s">&#39;The number&#39;</span><span class="p">,</span> <span class="n">num2str</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="s">&#39;is even&#39;</span><span class="p">])</span>
+<span class="k">else</span>
+  <span class="nb">disp</span><span class="p">([</span><span class="s">&#39;The number&#39;</span><span class="p">,</span> <span class="n">num2str</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="s">&#39;is odd&#39;</span><span class="p">])</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+<p>In this case, only one of the two display lines will be executed, depending on whether <code class="docutils literal notranslate"><span class="pre">x</span></code> is odd or even.</p>
+<p>You don’t have to specify an <code class="docutils literal notranslate"><span class="pre">else</span></code> branch for your conditional:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">0</span>
+  <span class="nb">disp</span><span class="p">(</span><span class="s">&#39;a cannot be negative!&#39;</span><span class="p">)</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="for-loops">
+<h2>For loops<a class="headerlink" href="#for-loops" title="Permalink to this headline">¶</a></h2>
+<p>You can use a <em>for loop</em> to iterate through a series of values. For example, the following piece of code displays the numbers from 1 to 100:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="mi">1</span><span class="p">:</span><span class="mi">100</span>
+  <span class="nb">disp</span><span class="p">(</span><span class="nb">i</span><span class="p">)</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+<p>What happens is that the variable <code class="docutils literal notranslate"><span class="pre">i</span></code> takes on the values 1 to 100 in turn, and then the body of the loop (the <code class="docutils literal notranslate"><span class="pre">disp(i)</span></code> command) is executed with each value.</p>
+<p>If you specifically want to iterate over an array, you can use the following syntax:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">element</span> <span class="p">=</span> <span class="n">my_list</span>
+  <span class="c">% do something with the element!</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<p>Functions are shorthands to use more complex computations. You can define your own functions, but there are also lots and lots of built-in ones in Matlab.</p>
+<p>In the below, we explain functions using their <em>signatures</em>. For example, the <code class="docutils literal notranslate"><span class="pre">size(matrix)</span></code> function returns the size of a matrix. <code class="docutils literal notranslate"><span class="pre">size</span></code> is the <em>name</em> of the function, while <code class="docutils literal notranslate"><span class="pre">matrix</span></code> is its only <em>argument</em>. You can use functions by specifying their names and supplying appropriate arguments; for example, <code class="docutils literal notranslate"><span class="pre">size([1</span> <span class="pre">2</span> <span class="pre">3])</span></code>.</p>
+<div class="section" id="disp-value">
+<h3>disp(value)<a class="headerlink" href="#disp-value" title="Permalink to this headline">¶</a></h3>
+<p>You can print values using the <code class="docutils literal notranslate"><span class="pre">disp</span></code> command. It will attempt to convert whatever value you give it to a string:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="nb">disp</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">disp</span><span class="p">(</span><span class="s">&#39;Lego robot&#39;</span><span class="p">)</span>
+<span class="nb">disp</span><span class="p">([</span><span class="s">&#39;My favourite number is &#39;</span><span class="p">,</span> <span class="n">num2str</span><span class="p">(</span><span class="n">favNumber</span><span class="p">)])</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="mod-number-divisor">
+<h3>mod(number, divisor)<a class="headerlink" href="#mod-number-divisor" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">mod</span></code> function returns the remainder of a number for a given divisor. For example:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="nb">mod</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>  <span class="c">% this will print 2</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="randi-range-rows-columns">
+<h3>randi(range, rows, columns)<a class="headerlink" href="#randi-range-rows-columns" title="Permalink to this headline">¶</a></h3>
+<p>Generates a matrix of size <code class="docutils literal notranslate"><span class="pre">rows</span> <span class="pre">x</span> <span class="pre">columns</span></code> filled with integers uniformly distributed between 1 and <code class="docutils literal notranslate"><span class="pre">range</span></code>. For example:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">randi</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="size-matrix">
+<h3>size(matrix)<a class="headerlink" href="#size-matrix" title="Permalink to this headline">¶</a></h3>
+<p>Returns the size of a matrix (or vector).</p>
+</div>
+<div class="section" id="plot-vector">
+<h3>plot(vector)<a class="headerlink" href="#plot-vector" title="Permalink to this headline">¶</a></h3>
+<p>Plots a graph using the values in the vector.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">plot</span></code> command provides lots of ways to customise your graph. Search online for the Matlab plot command for more details.</p>
+<p>Also check out the <code class="docutils literal notranslate"><span class="pre">xlabel(label)</span></code>, <code class="docutils literal notranslate"><span class="pre">ylabel(label)</span></code> and <code class="docutils literal notranslate"><span class="pre">grid</span> <span class="pre">on</span></code> commands.</p>
+</div>
+<div class="section" id="tic-toc">
+<h3>tic, toc<a class="headerlink" href="#tic-toc" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">tic</span></code> resets Matlab’s internal stopwatch. <code class="docutils literal notranslate"><span class="pre">toc</span></code> returns its current value.</p>
+</div>
+<div class="section" id="making-you-own-function">
+<h3>Making you own function<a class="headerlink" href="#making-you-own-function" title="Permalink to this headline">¶</a></h3>
+<p>Making your own function is simple. The syntax to create a function is:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span>[y1, ..., yM] <span class="p">=</span><span class="w"> </span><span class="nf">myfun</span><span class="p">(</span>x1, ..., xM<span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="c">% do some things</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+<p>Where the function takes input <em>parameters</em> <code class="docutils literal notranslate"><span class="pre">x1,</span> <span class="pre">...,</span> <span class="pre">xM</span></code> and returns the values of <code class="docutils literal notranslate"><span class="pre">y1,</span> <span class="pre">...</span> <span class="pre">yM</span></code>. To call this function, you need to call <code class="docutils literal notranslate"><span class="pre">myfun(arguments)</span></code>.</p>
+<p>If you dont need to return or input anything to the function, you can use the following syntax:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span><span class="nf">myfun</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="c">% do some things</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+<p>** Note that functions must be saved in a file consisting only of functions. Furthermore, the name of the file must match the name of the first function in the file ** e.g. for above, the file should be called <code class="docutils literal notranslate"><span class="pre">myfun.m</span></code>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="toolkit-setup.html" class="btn btn-neutral float-right" title="EV3 Matlab Toolkit - Setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="matlab-intro.html" class="btn btn-neutral float-left" title="Matlab Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Dr Gábor Csányi, Mr Miklós A Danka
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

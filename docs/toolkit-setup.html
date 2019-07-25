@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>EV3 Matlab Toolkit - Setup &mdash; PKP Lego Robotics 2.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/lego-designer.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="_static/mathjax-v2.3-9-g78ea6af/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="EV3 Matlab Toolkit - Motors Introduction" href="toolkit-motors.html" />
+    <link rel="prev" title="Matlab Reference" href="matlab-reference.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PKP Lego Robotics
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Course Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inventory.html">LEGO Inventory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matlab-intro.html">Matlab Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matlab-reference.html">Matlab Reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EV3 Matlab Toolkit - Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#getting-the-library">Getting the library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-the-library-to-matlab">Adding the library to Matlab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connecting-to-the-ev3-brick">Connecting to the EV3 Brick</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#usb">USB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wifi">WiFi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ending-the-connection">Ending the connection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#an-important-note-reliability-robustness">An Important Note: Reliability &amp; Robustness</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="toolkit-motors.html">EV3 Matlab Toolkit - Motors Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="toolkit-sensors.html">EV3 Matlab Toolkit - Sensors Introduction and Low-Pass Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="toolkit-motors-reference.html">EV3 Matlab Toolkit - Motors Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="toolkit-sensors-reference.html">EV3 Matlab Toolkit - Sensors Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pid.html">PID Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Project Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PKP Lego Robotics</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>EV3 Matlab Toolkit - Setup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/toolkit-setup.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ev3-matlab-toolkit-setup">
+<h1>EV3 Matlab Toolkit - Setup<a class="headerlink" href="#ev3-matlab-toolkit-setup" title="Permalink to this headline">¶</a></h1>
+<p>You will program your EV3 brick using a custom Matlab extension from the Queensland University of Technology. Their information on the library can be found on the <a class="reference external" href="https://wiki.qut.edu.au/display/cyphy/QUT+EV3+MATLAB+toolkit">QUT EV3 Matlab toolkit</a> page: use this page for reference. Here we will give you a quick introduction to the library.</p>
+<div class="section" id="getting-the-library">
+<h2>Getting the library<a class="headerlink" href="#getting-the-library" title="Permalink to this headline">¶</a></h2>
+<p>You can download a locally cached zip here: <a class="reference download internal" download="" href="_downloads/382f8c1c91d1bb318f0da665ec4f983d/EV3-2014-07-16.zip"><code class="xref download docutils literal notranslate"><span class="pre">EV3-2014-07-16.zip</span></code></a>.</p>
+<p>Unzip this folder (for example, to your home directory). Take note of the path (such as <code class="docutils literal notranslate"><span class="pre">C:\pkp-lego\EV3</span></code>). In this documentation, we will reference this path as <code class="docutils literal notranslate"><span class="pre">&lt;EV3&gt;</span></code>.</p>
+</div>
+<div class="section" id="adding-the-library-to-matlab">
+<h2>Adding the library to Matlab<a class="headerlink" href="#adding-the-library-to-matlab" title="Permalink to this headline">¶</a></h2>
+<p>The library you downloaded is a collection of Matlab files. You can use this extension by including its files <em>on the path</em> so that they become available in your normal code.</p>
+<p>Under the Home ribbon and the Environment tab, go to <strong>Set Path</strong> and add the <code class="docutils literal notranslate"><span class="pre">&lt;EV3&gt;</span></code> path to the Matlab path.</p>
+<p>On some installations of Matlab, this might require Administrator privileges, so if you get this error, and you don’t have admin rights, then simply keep all your own files in the same <code class="docutils literal notranslate"><span class="pre">&lt;EV3&gt;</span></code> directory, and it should all work - the current directory is always included on the path.</p>
+</div>
+<div class="section" id="connecting-to-the-ev3-brick">
+<h2>Connecting to the EV3 Brick<a class="headerlink" href="#connecting-to-the-ev3-brick" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="usb">
+<h3>USB<a class="headerlink" href="#usb" title="Permalink to this headline">¶</a></h3>
+<p>The easiest way to connect is by USB. Connect the EV3 brick to the computer.</p>
+<p>You can confirm that your connection works by typing in Matlab:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="p">=</span> <span class="n">Brick</span><span class="p">(</span><span class="s">&#39;ioType&#39;</span><span class="p">,</span><span class="s">&#39;usb&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If your connection is successful, you should’t get any error messages.</p>
+<p>Note that if you want to create another connection, you have to first close this existing one by typing:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">delete</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="wifi">
+<h3>WiFi<a class="headerlink" href="#wifi" title="Permalink to this headline">¶</a></h3>
+<p>Wireless connection works by connecting both your computer and the EV3 brick to the same wireless network. The brick isn’t by default capable of connecting to wireless networks: it requires a Netgear dongle. Plug in the dongle through the USB port on the EV3, and restart the brick.</p>
+<p>On the EV3 menu, go to <strong>Options &gt; WiFi &gt; Connections</strong>. Select the wireless network you want to connect to, choose the encryption type, and enter the password. <strong>We set up a dedicated wireless network for this course, named “PKP-Lego”. There is no password, so for the Encryption, select “None”</strong> Note that the capitalization matters. Take note of the brick’s IP address by going to <strong>Options &gt; WiFi &gt; &lt;your-connection&gt;</strong>.</p>
+<p>On Linux/Mac, open a Terminal. On Windows, go to <strong>Start &gt; Run</strong> and type <strong>cmd</strong>. You can confirm that your connection works by typing <code class="docutils literal notranslate"><span class="pre">ping</span> <span class="pre">&lt;brick-ip-address&gt;</span></code>. The output should look like the following:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">PING</span> <span class="mf">192.168</span><span class="p">.</span><span class="mf">1.82</span> <span class="p">(</span><span class="mf">192.168</span><span class="p">.</span><span class="mf">1.82</span><span class="p">):</span> <span class="mi">56</span> <span class="n">data</span> <span class="n">bytes</span>
+<span class="mi">64</span> <span class="n">bytes</span> <span class="n">from</span> <span class="mf">192.168</span><span class="p">.</span><span class="mf">1.82</span><span class="p">:</span> <span class="n">icmp_seq</span><span class="p">=</span><span class="mi">0</span> <span class="n">ttl</span><span class="p">=</span><span class="mi">64</span> <span class="n">time</span><span class="p">=</span><span class="mf">61.894</span> <span class="n">ms</span>
+<span class="mi">64</span> <span class="n">bytes</span> <span class="n">from</span> <span class="mf">192.168</span><span class="p">.</span><span class="mf">1.82</span><span class="p">:</span> <span class="n">icmp_seq</span><span class="p">=</span><span class="mi">1</span> <span class="n">ttl</span><span class="p">=</span><span class="mi">64</span> <span class="n">time</span><span class="p">=</span><span class="mf">6.645</span> <span class="n">ms</span>
+<span class="mi">64</span> <span class="n">bytes</span> <span class="n">from</span> <span class="mf">192.168</span><span class="p">.</span><span class="mf">1.82</span><span class="p">:</span> <span class="n">icmp_seq</span><span class="p">=</span><span class="mi">2</span> <span class="n">ttl</span><span class="p">=</span><span class="mi">64</span> <span class="n">time</span><span class="p">=</span><span class="mf">6.664</span> <span class="n">ms</span>
+<span class="mi">64</span> <span class="n">bytes</span> <span class="n">from</span> <span class="mf">192.168</span><span class="p">.</span><span class="mf">1.82</span><span class="p">:</span> <span class="n">icmp_seq</span><span class="p">=</span><span class="mi">3</span> <span class="n">ttl</span><span class="p">=</span><span class="mi">64</span> <span class="n">time</span><span class="p">=</span><span class="mf">6.266</span> <span class="n">ms</span>
+</pre></div>
+</div>
+<p>The brick regularly broadcasts information about its connection. If you’re on Linux/Mac, you can observe this by typing the following to the Terminal:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">nc</span> <span class="o">-</span><span class="n">ulk</span> <span class="mi">3015</span>
+</pre></div>
+</div>
+<p>To open the wireless connection in Matlab, you need to give Matlab access to a java class file <code class="docutils literal notranslate"><span class="pre">OutputStreamSend.class</span></code> to the Matlab <em>java classpath</em>. To do this,  Add this file to the Matlab java classpath by typing <code class="docutils literal notranslate"><span class="pre">javaaddpath('&lt;EV3&gt;')</span></code>.</p>
+<p>Type the following in Matlab:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="p">=</span> <span class="n">Brick</span><span class="p">(</span><span class="s">&#39;ioType&#39;</span><span class="p">,</span><span class="s">&#39;wifi&#39;</span><span class="p">,</span><span class="s">&#39;wfAddr&#39;</span><span class="p">,</span><span class="s">&#39;&lt;brick-ip-address&gt;&#39;</span><span class="p">,</span><span class="s">&#39;wfPort&#39;</span><span class="p">,</span><span class="mi">5555</span><span class="p">,</span><span class="s">&#39;wfSN&#39;</span><span class="p">,</span><span class="s">&#39;&lt;brick-serial-number&gt;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For example, I typed the following for my connection:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="p">=</span> <span class="n">Brick</span><span class="p">(</span><span class="s">&#39;ioType&#39;</span><span class="p">,</span><span class="s">&#39;wifi&#39;</span><span class="p">,</span><span class="s">&#39;wfAddr&#39;</span><span class="p">,</span><span class="s">&#39;192.168.1.104&#39;</span><span class="p">,</span><span class="s">&#39;wfPort&#39;</span><span class="p">,</span><span class="mi">5555</span><span class="p">,</span><span class="s">&#39;wfSN&#39;</span><span class="p">,</span><span class="s">&#39;001653444434&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If your connection is successful, you should’t get any error messages.</p>
+<p>Note that if you want to create another connection, you have to first close this existing one by typing:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">delete</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="ending-the-connection">
+<h2>Ending the connection<a class="headerlink" href="#ending-the-connection" title="Permalink to this headline">¶</a></h2>
+<p>Before you can start a new connection, you have to end the previous one. This is particularly important if your program didn’t finish normally.</p>
+<p>You can end your connection by typing:</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">delete</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here, <code class="docutils literal notranslate"><span class="pre">b</span></code> is the variable for the brick to which you connected.</p>
+</div>
+<div class="section" id="an-important-note-reliability-robustness">
+<h2>An Important Note: Reliability &amp; Robustness<a class="headerlink" href="#an-important-note-reliability-robustness" title="Permalink to this headline">¶</a></h2>
+<p>The library that is used to control the EV3 brick is by no means perfect. For example, common issues found include:</p>
+<ul class="simple">
+<li>Matlab keeps crashing!</li>
+<li>Programs behave differently each time they are run!</li>
+</ul>
+<p>These two problems can be solved in the software directly - you <strong>must ensure that once you have finished with a ``brick object``, it is deleted</strong> (e.g. you cannot create a new <code class="docutils literal notranslate"><span class="pre">brick</span></code> if an existing connection already exists - Matlab will crash). It is also a good idea to clear all local variables at the <strong>start</strong> of every program using the command <code class="docutils literal notranslate"><span class="pre">clearvars</span></code> - this helps to ensure that the program does the same thing every time.</p>
+<p>In addition, the hardware is not perfect. All sensors have noise in their readings e.g. the colour sensor sometimes stops reading the right color (for a moment or so).</p>
+<p>Therefore, it is <strong>incredibly important</strong> to design your functions and systems to be reliable and robust as possible. In addition to the steps mentioned above, some methods of doing this could include:</p>
+<ul class="simple">
+<li>Time averaging sensor readings.</li>
+<li>Using the motor tachometer rather than using time delays.</li>
+</ul>
+<p>[Many more methods are possible].</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="toolkit-motors.html" class="btn btn-neutral float-right" title="EV3 Matlab Toolkit - Motors Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="matlab-reference.html" class="btn btn-neutral float-left" title="Matlab Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Dr Gábor Csányi, Mr Miklós A Danka
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
