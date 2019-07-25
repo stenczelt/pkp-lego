@@ -6,12 +6,12 @@ Overview
 
 The group project you'll be doing will span three weeks, and you'll be working in a team of two people. A project of this size requires proper planning to make sure that you achieve your goals and don't get behind schedule.
 
-You can share your reports and other files with the instructors and the rest of the group in `this Google Drive folder <https://drive.google.com/drive/folders/1g6YF0TESrM48wVOq6liLSq02_2N1CRQl?usp=sharing>`_.
+You can share your reports and other files with the instructors and the rest of the group in `this Google Drive folder <https://drive.google.com/drive/folders/1pGE4Bnm-WuWdPsZBYDa7namHtbdc3hO1?usp=sharing>`_.
 
 
 
 Choosing a Project
-------------------------
+---------------------
 
 Since you don't yet have experience with constructing and programming Mindstorms robots, it might feel difficult to tell what a project with the right size is. In order to engage the size and complexity of robot building projects, search YouTube for *EV3* (or for the older version, *NXT*), and check out the example projects below. Searching YouTube is also a good way to come up with project ideas.
 
@@ -70,6 +70,6 @@ The format of the final report is not specified, but at a minimum, it should inc
 
     * This is a really important part of the report: it shows that you thought about your decisions and you learnt from what you observed. Did you have a construct that didn't work the first time, that was inaccurate the second time, but worked the third time? Did you have some code which returned noisy signal the first time but a transformation has fixed it? Write about it: the learning process is the most interesting part.
 
-Upload your report to `this shared Google Drive folder <https://drive.google.com/drive/folders/1g6YF0TESrM48wVOq6liLSq02_2N1CRQl?usp=sharing>`_.
+Upload your report to `this shared Google Drive folder <https://drive.google.com/drive/folders/1pGE4Bnm-WuWdPsZBYDa7namHtbdc3hO1?usp=sharing>`_.
 
 The presentation will consist of 3 minutes of presentation (including a demo) and 2 minutes of Q&A.

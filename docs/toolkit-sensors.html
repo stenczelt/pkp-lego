@@ -187,12 +187,13 @@
 </div>
 <div class="section" id="example-program">
 <h2>Example program<a class="headerlink" href="#example-program" title="Permalink to this headline">¶</a></h2>
-<p>Download the <a class="reference download internal" download="" href="_downloads/0a50f4ac934ceb9b3357d159444c6d4f/plotSensor.m"><code class="xref download docutils literal notranslate"><span class="pre">plotSensor.m</span></code></a> file and open it in Matlab.</p>
+<p>Download the <a class="reference download internal" download="" href="_downloads/fad62876c16dd750044ea8a53dc05e67/plotSensor.m"><code class="xref download docutils literal notranslate"><span class="pre">plotSensor.m</span></code></a> file and open it in Matlab.</p>
 <p>This example program demonstrates how to read sensor values and display them on a graph.</p>
 <p>The program is by default configured to show whether the touch sensor (attached to Port 1) is pressed or not. It also assumes that you connected your brick to the laptop via USB: change the brick initialisation line accordingly if you’re using wireless.</p>
 <p>Start the program, and start pressing the touch sensor.</p>
 <blockquote>
-<div><em>Task:</em> Is there any <em>latency</em> in the change appearing on the graph after you press the button?</div></blockquote>
+<div><p><em>Task:</em> Is there any <em>latency</em> in the change appearing on the graph after you press the button?</p>
+</div></blockquote>
 <p>Let’s inspect this program now.</p>
 <div class="section" id="configuration">
 <h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
@@ -206,26 +207,30 @@
 <p>You can use any of the 4 available ports as the sensor port.</p>
 <p>You can use the following sensor modes:</p>
 <ul class="simple">
-<li>Touch sensor<ul>
-<li><code class="docutils literal notranslate"><span class="pre">Device.Pushed</span></code> – Returns 1 if the touch sensor is pushed otherwise 0.</li>
-<li><code class="docutils literal notranslate"><span class="pre">Device.Bumps</span></code> – Returns the number of touch sensor bumps since the last reset.</li>
+<li><p>Touch sensor</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Device.Pushed</span></code> – Returns 1 if the touch sensor is pushed otherwise 0.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Device.Bumps</span></code> – Returns the number of touch sensor bumps since the last reset.</p></li>
 </ul>
 </li>
-<li>Color sensor<ul>
-<li><code class="docutils literal notranslate"><span class="pre">Device.ColReflect</span></code> – Measures the reflected light intensity from 0% to 100%.</li>
-<li><code class="docutils literal notranslate"><span class="pre">Device.ColAmbient</span></code> – Measures the ambient light intensity from 0% to 100%.</li>
-<li><code class="docutils literal notranslate"><span class="pre">Device.ColColor</span></code> – Returns the detected color where ‘0’ is no color, ‘1’ is black, ‘2’ is blue, ‘3’ is green, ‘4’ is yellow, ‘5’ is red, ‘6’ is white and ‘7’ is brown.</li>
+<li><p>Color sensor</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Device.ColReflect</span></code> – Measures the reflected light intensity from 0% to 100%.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Device.ColAmbient</span></code> – Measures the ambient light intensity from 0% to 100%.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Device.ColColor</span></code> – Returns the detected color where ‘0’ is no color, ‘1’ is black, ‘2’ is blue, ‘3’ is green, ‘4’ is yellow, ‘5’ is red, ‘6’ is white and ‘7’ is brown.</p></li>
 </ul>
 </li>
-<li>Ultrasonic sensor<ul>
-<li><code class="docutils literal notranslate"><span class="pre">Device.USDistCM</span></code> – Measures the ultrasonic distance in centimeters (max 255 cm).</li>
-<li><code class="docutils literal notranslate"><span class="pre">Device.USDistIN</span></code> – Measures the ultrasonic distance in inches (max 100 inches).</li>
-<li><code class="docutils literal notranslate"><span class="pre">Device.USListen</span></code> – Returns 1 if an ultrasonic signal is detected otherwise 0.</li>
+<li><p>Ultrasonic sensor</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Device.USDistCM</span></code> – Measures the ultrasonic distance in centimeters (max 255 cm).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Device.USDistIN</span></code> – Measures the ultrasonic distance in inches (max 100 inches).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Device.USListen</span></code> – Returns 1 if an ultrasonic signal is detected otherwise 0.</p></li>
 </ul>
 </li>
-<li>Gyro sensor<ul>
-<li><code class="docutils literal notranslate"><span class="pre">Device.GyroAng</span></code> – Measures the rotation angle in degrees since the last reset.</li>
-<li><code class="docutils literal notranslate"><span class="pre">Device.GyroRate</span></code> – Measures the rotation rate in degrees per second.</li>
+<li><p>Gyro sensor</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Device.GyroAng</span></code> – Measures the rotation angle in degrees since the last reset.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Device.GyroRate</span></code> – Measures the rotation rate in degrees per second.</p></li>
 </ul>
 </li>
 </ul>
@@ -295,7 +300,8 @@
 <p>You get your reading by calling <code class="docutils literal notranslate"><span class="pre">inputReadSI</span></code> on the brick. The reading is then collected into a vector called <code class="docutils literal notranslate"><span class="pre">x</span></code>. The figure is updated with the current time and the latest reading, and then redrawn.</p>
 <p>Finally, the figure is reset every 10 seconds by resetting the <code class="docutils literal notranslate"><span class="pre">t</span></code> and <code class="docutils literal notranslate"><span class="pre">x</span></code> vectors and restarting the timer.</p>
 <blockquote>
-<div><em>Task:</em> Currently the figure is reset every 10 seconds. Make this a configurable parameter at the top of the program.</div></blockquote>
+<div><p><em>Task:</em> Currently the figure is reset every 10 seconds. Make this a configurable parameter at the top of the program.</p>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="other-sensor-values">

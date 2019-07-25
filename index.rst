@@ -3,21 +3,21 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to PKP Lego Robot Course 2018 Documentation!
+Welcome to PKP Lego Robot Course 2019 Documentation!
 ==========================================
 
 .. raw:: html
 
     <div style="text-align: center; color: red; font-size: 24px; font-weight: bold;">
-      Report deadline: Thursday (August 16) end-of-day<br />
-      Inventory deadline: Thursday (August 16) end-of-day<br />
-      Presentation & demo time: Wednesday (August 15) 15:15–18:00<br />
+      Report deadline: Thursday (August 15) end-of-day<br />
+      Inventory deadline: Thursday (August 15) end-of-day<br />
+      Presentation & demo time: Wednesday (August 14) 15:15–18:00<br />
     </div>
 
 Instructors:
 
-* **Dr Gábor Csányi** -- gc121 [AT] cam.ac.uk
-* **Mr Mrinank Sharma** -- ms2314 [AT] cam.ac.uk
+* **Dr Gábor Csányi** -- ``gc121 [AT] cam.ac.uk``
+* **Mr Mrinank Sharma** -- ``ms2314 [AT] cam.ac.uk``
 
 .. image:: resources/picture-lego-pid.jpg
    :width: 100 %
@@ -25,7 +25,7 @@ Instructors:
 
 .. Group mailing list: **pembroke-kings-programme-lego-2018 [AT] googlegroups.com**, https://groups.google.com/forum/#!forum/pembroke-kings-programme-lego-2018
 
-Please join the google group `here <https://groups.google.com/forum/#!forum/pembroke-kings-programme-lego-2018>`_.
+Please join the google group `here <https://groups.google.com/forum/#!forum/pkp-lego-2019>`_, and feel free to use the forum to discuss ideas with other course participants. 
 
 Contents:
 

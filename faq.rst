@@ -6,7 +6,7 @@ Why do I receive a "hidapi write error"?
 
 This normally happens when a USB connection is still open to the brick. Run ``delete(b)`` (where ``b`` is the variable for the brick) to end the connection. If this doesn't work, restart Matlab.
 
-My card doesn't let me in to the Engineering Department / LR3
+My card doesn't let me in to the Engineering Department
 --------------------------------------------
 
 First of all, make sure that you're using your plain white Pembroke card. (The Union and the King's cards won't work.)
@@ -15,7 +15,12 @@ Next, go to the Pembroke main gate, and refresh your card permissions by touchin
 
 If your card still doesn't work, get in touch with the instructors and the PKP course management.
 
-The brick doesn't connect to the wireless
+I can't get into LR3!
+--------------------------------------------
+
+You need to clear the door lock by pressing ``C`` before entering the access code!
+
+The brick doesn't connect to the WiFi network
 -----------------------------------------
 
 You can confirm that the wireless dongle works by checking whether the blue light on the dongle is on/blinking.

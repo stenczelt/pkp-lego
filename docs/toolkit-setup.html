@@ -180,7 +180,7 @@
 <p>You will program your EV3 brick using a custom Matlab extension from the Queensland University of Technology. Their information on the library can be found on the <a class="reference external" href="https://wiki.qut.edu.au/display/cyphy/QUT+EV3+MATLAB+toolkit">QUT EV3 Matlab toolkit</a> page: use this page for reference. Here we will give you a quick introduction to the library.</p>
 <div class="section" id="getting-the-library">
 <h2>Getting the library<a class="headerlink" href="#getting-the-library" title="Permalink to this headline">¶</a></h2>
-<p>You can download a locally cached zip here: <a class="reference download internal" download="" href="_downloads/382f8c1c91d1bb318f0da665ec4f983d/EV3-2014-07-16.zip"><code class="xref download docutils literal notranslate"><span class="pre">EV3-2014-07-16.zip</span></code></a>.</p>
+<p>You can download a locally cached zip here: <a class="reference download internal" download="" href="_downloads/2e4efc51566245b500051d44bdd20792/EV3-2014-07-16.zip"><code class="xref download docutils literal notranslate"><span class="pre">EV3-2014-07-16.zip</span></code></a>.</p>
 <p>Unzip this folder (for example, to your home directory). Take note of the path (such as <code class="docutils literal notranslate"><span class="pre">C:\pkp-lego\EV3</span></code>). In this documentation, we will reference this path as <code class="docutils literal notranslate"><span class="pre">&lt;EV3&gt;</span></code>.</p>
 </div>
 <div class="section" id="adding-the-library-to-matlab">
@@ -249,15 +249,15 @@
 <h2>An Important Note: Reliability &amp; Robustness<a class="headerlink" href="#an-important-note-reliability-robustness" title="Permalink to this headline">¶</a></h2>
 <p>The library that is used to control the EV3 brick is by no means perfect. For example, common issues found include:</p>
 <ul class="simple">
-<li>Matlab keeps crashing!</li>
-<li>Programs behave differently each time they are run!</li>
+<li><p>Matlab keeps crashing!</p></li>
+<li><p>Programs behave differently each time they are run!</p></li>
 </ul>
 <p>These two problems can be solved in the software directly - you <strong>must ensure that once you have finished with a ``brick object``, it is deleted</strong> (e.g. you cannot create a new <code class="docutils literal notranslate"><span class="pre">brick</span></code> if an existing connection already exists - Matlab will crash). It is also a good idea to clear all local variables at the <strong>start</strong> of every program using the command <code class="docutils literal notranslate"><span class="pre">clearvars</span></code> - this helps to ensure that the program does the same thing every time.</p>
 <p>In addition, the hardware is not perfect. All sensors have noise in their readings e.g. the colour sensor sometimes stops reading the right color (for a moment or so).</p>
 <p>Therefore, it is <strong>incredibly important</strong> to design your functions and systems to be reliable and robust as possible. In addition to the steps mentioned above, some methods of doing this could include:</p>
 <ul class="simple">
-<li>Time averaging sensor readings.</li>
-<li>Using the motor tachometer rather than using time delays.</li>
+<li><p>Time averaging sensor readings.</p></li>
+<li><p>Using the motor tachometer rather than using time delays.</p></li>
 </ul>
 <p>[Many more methods are possible].</p>
 </div>
