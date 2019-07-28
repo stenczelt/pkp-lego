@@ -19,7 +19,7 @@ Don't forget that when you want to start a new connection, you have to end the p
 Example program
 ---------------
 
-Download the :download:`plotSensor.m <resources/plotSensor.m>` file and open it in Matlab.
+Download the :download:`plotSensor.m <https://github.com/gabor1/pkp-lego/raw/master/resources/plotSensor.m>` file and open it in Matlab.
 
 This example program demonstrates how to read sensor values and display them on a graph.
 
