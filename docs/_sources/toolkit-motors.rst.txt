@@ -19,7 +19,7 @@ Don't forget that when you want to start a new connection, you have to end the p
 Example program
 ---------------
 
-Open Matlab, and open the ``Example.m`` file from your ``<EV3>`` directory. (You can also download it from here: :download:`Example.m <resources/Example.m>`.)
+Open Matlab, and open the ``Example.m`` file from your ``<EV3>`` directory. (You can also download it from here: :download:`Example.m <https://github.com/gabor1/pkp-lego/raw/master/resources/Example.m>`.)
 
 This example program demonstrates some of the functionality of the EV3 Matlab toolkit. The program will give you some basic interactive control over a motor connected to Port A.
 

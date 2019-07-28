@@ -8,7 +8,7 @@ You will program your EV3 brick using a custom Matlab extension from the Queensl
 Getting the library
 --------------------
 
-You can download a locally cached zip here: :download:`EV3-2014-07-16.zip<resources/EV3-2014-07-16.zip>`.
+You can download a locally cached zip here: :download:`EV3-2014-07-16.zip<https://github.com/gabor1/pkp-lego/raw/master/resources/EV3-2014-07-16.zip>`.
 
 Unzip this folder (for example, to your home directory). Take note of the path (such as ``C:\pkp-lego\EV3``). In this documentation, we will reference this path as ``<EV3>``.
 
