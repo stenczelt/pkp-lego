@@ -13,8 +13,8 @@ Because there are so many pieces, it is imperative that we keep them sorted in t
 
 There's a recommended sorting provided by LEGO:
 
-* Core set: :download:`Education Core Sorting.pdf<resources/Education Core Sorting.pdf>`
-* Expansion set: :download:`Education Expansion Sorting.pdf<resources/Education Expansion Sorting.pdf>`
+* Core set: :download:`Education Core Sorting.pdf<resources/EducationCoreSorting.pdf>`
+* Expansion set: :download:`Education Expansion Sorting.pdf<resources/EducationExpansionSorting.pdf>`
 
 
 
@@ -23,8 +23,8 @@ Inventory at the end of the course
 
 At the end of the course you have to make an inventory of the LEGO pieces. The inventories below show you how many pieces you should have of each type.
 
-* Core set: :download:`Education Core Inventory.pdf<resources/Education Core Inventory.pdf>`
-* Expansion set: :download:`Education Expansion Inventory.pdf<resources/Education Expansion Inventory.pdf>`
+* Core set: :download:`Education Core Inventory.pdf<resources/EducationCoreInventory.pdf>`
+* Expansion set: :download:`Education Expansion Inventory.pdf<resources/EducationExpansionInventory.pdf>`
 
 **If you are missing any components which prevent you from progressing on the project, please contact an instructor.**
 

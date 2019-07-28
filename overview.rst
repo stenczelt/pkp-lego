@@ -23,10 +23,6 @@ Don't forget to set your email preferences so that you get immediate notificatio
 
 You can email the list by writing to ``pkp-lego-2019 [AT] googlegroups.com``.
 
-You can also access the mailing list as a forum directly from these docs on the :doc:`forum` page.
-
-
-
 Preparation
 -----------
 
