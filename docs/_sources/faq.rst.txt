@@ -18,7 +18,7 @@ If your card still doesn't work, get in touch with the instructors and the PKP c
 I can't get into LR3!
 --------------------------------------------
 
-You need to clear the door lock by pressing ``C`` before entering the access code!
+You need to clear the door lock by pressing ``C`` before entering the access code (``7890Y``)!
 
 The brick doesn't connect to the WiFi network
 -----------------------------------------
