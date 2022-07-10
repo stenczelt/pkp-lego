@@ -34,13 +34,10 @@ Contents:
 
    overview
    inventory
-   matlab-intro
-   matlab-reference
-   toolkit-setup
-   toolkit-motors
-   toolkit-sensors
-   toolkit-motors-reference
-   toolkit-sensors-reference
+   python-intro
+   ev3-setup
+   ev3-motors
+   ev3-sensors
    pid
    project
    faq
