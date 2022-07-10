@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EV3 Matlab Toolkit - Motors Introduction &mdash; PKP Lego Robotics 2.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/lego-designer.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="EV3 Matlab Toolkit - Sensors Introduction and Low-Pass Filters" href="ev3-sensors.html" />
+    <link rel="prev" title="EV3 Matlab Toolkit - Setup" href="ev3-setup.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> PKP Lego Robotics
+          </a>
+              <div class="version">
+                2.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Course Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inventory.html">LEGO Inventory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python-intro.html">Python Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ev3-setup.html">EV3 Matlab Toolkit - Setup</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EV3 Matlab Toolkit - Motors Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-program">Example program</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#initialisation">Initialisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user-input">User input</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#speed-control">Speed control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tachometer">Tachometer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sensor-reading">Sensor reading</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#motor-control">Motor Control</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ev3-sensors.html">EV3 Matlab Toolkit - Sensors Introduction and Low-Pass Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pid.html">PID Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Project Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PKP Lego Robotics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>EV3 Matlab Toolkit - Motors Introduction</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ev3-motors.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ev3-matlab-toolkit-motors-introduction">
+<h1>EV3 Matlab Toolkit - Motors Introduction<a class="headerlink" href="#ev3-matlab-toolkit-motors-introduction" title="Permalink to this heading">¶</a></h1>
+<p>The EV3 Matlab toolkit provides a collection of functions to read sensors and control motors. Here, we will go through an introduction to motor control.</p>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">¶</a></h2>
+<p>This part of the tutorial assumes that you connected Matlab to the EV3 via USB. Complete the <span class="xref std std-doc">toolkit-setup</span> section before proceeding.</p>
+<p>Also attach one of the motors to Port A on the brick.</p>
+<p>Don’t forget that when you want to start a new connection, you have to end the previous one first with <code class="docutils literal notranslate"><span class="pre">delete(b)</span></code>.</p>
+</section>
+<section id="example-program">
+<h2>Example program<a class="headerlink" href="#example-program" title="Permalink to this heading">¶</a></h2>
+<p>Open Matlab, and open the <code class="docutils literal notranslate"><span class="pre">Example.m</span></code> file from your <code class="docutils literal notranslate"><span class="pre">&lt;EV3&gt;</span></code> directory. (You can also download it from here: <a class="reference download external" download="" href="https://github.com/gabor1/pkp-lego/raw/master/resources/Example.m"><code class="xref download docutils literal notranslate"><span class="pre">Example.m</span></code></a>.)</p>
+<p>This example program demonstrates some of the functionality of the EV3 Matlab toolkit. The program will give you some basic interactive control over a motor connected to Port A.</p>
+<p>Start the program, and play around with it using the instructions printed after start. Start the motors, and check the readings from the tachometer.</p>
+<blockquote>
+<div><p><em>Task:</em> What does the tachometer measure?</p>
+</div></blockquote>
+<p>Let’s inspect this program now.</p>
+<section id="initialisation">
+<h3>Initialisation<a class="headerlink" href="#initialisation" title="Permalink to this heading">¶</a></h3>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="c">% init the connection</span><span class="w"></span>
+<span class="nb">disp</span><span class="p">(</span><span class="s">&#39;Connecting ... &#39;</span><span class="p">)</span><span class="w"></span>
+<span class="c">% brick usb init</span><span class="w"></span>
+<span class="n">b</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">Brick</span><span class="p">(</span><span class="s">&#39;ioType&#39;</span><span class="p">,</span><span class="s">&#39;usb&#39;</span><span class="p">);</span><span class="w"></span>
+<span class="c">% beep to indicate connection</span><span class="w"></span>
+<span class="n">b</span><span class="p">.</span><span class="n">beep</span><span class="p">();</span><span class="w"></span>
+</pre></div>
+</div>
+<p>As you know already, <code class="docutils literal notranslate"><span class="pre">disp</span></code> outputs a string to the Matlab console. We then initiate a connection via USB to the brick. Note that if you want to run this example through wireless, you could follow the instructions in <span class="xref std std-doc">toolkit-setup</span>, and change this block of code to create a wireless connection. Finally, the successful connection is signalled by a beep.</p>
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a>Important: <a href="#id3"><span class="problematic" id="id4">**</span></a>if you are trying to use a motor, the motor must also be initialised. This can be done using the command <code class="docutils literal notranslate"><span class="pre">b.outputStart(0,Device.MotorA)</span></code>. Don’t forget to do this - otherwise, the motor will do nothing!</p>
+</section>
+<section id="user-input">
+<h3>User input<a class="headerlink" href="#user-input" title="Permalink to this heading">¶</a></h3>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="c">% user input</span><span class="w"></span>
+<span class="n">userIn</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">...</span><span class="w"></span>
+<span class="k">while</span><span class="p">(</span><span class="o">~</span><span class="nb">strcmp</span><span class="p">(</span><span class="n">userIn</span><span class="p">,</span><span class="s">&#39;f&#39;</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="c">% get input</span><span class="w"></span>
+<span class="w">  </span><span class="n">userIn</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">input</span><span class="p">(</span><span class="s">&#39;&gt; Input(u,d,t,s,b,o,c,v,f): &#39;</span><span class="p">,</span><span class="s">&#39;s&#39;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">...</span><span class="w"></span>
+<span class="k">end</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Your input is monitored in a while loop. The condition for entering the while loop is that the user input (stored in the <code class="docutils literal notranslate"><span class="pre">userIn</span></code> variable) be not equal to the letter <em>f</em>. So next time you input <em>f</em>, the while loop won’t be entered, and the program will finish by closing the connection to the brick.</p>
+</section>
+<section id="speed-control">
+<h3>Speed control<a class="headerlink" href="#speed-control" title="Permalink to this heading">¶</a></h3>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="c">% increase speed</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">userIn</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&#39;u&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="n">motorPower</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">motorPower</span><span class="o">+</span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="n">motorPower</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">100</span><span class="w"></span>
+<span class="w">    </span><span class="n">motorPower</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">end</span><span class="w"></span>
+<span class="w">  </span><span class="n">b</span><span class="p">.</span><span class="n">outputPower</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">Device</span><span class="p">.</span><span class="n">MotorA</span><span class="p">,</span><span class="n">motorPower</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="nb">disp</span><span class="p">([</span><span class="s">&#39;&gt; Motor Power: &#39;</span><span class="w"> </span><span class="nb">num2str</span><span class="p">(</span><span class="n">motorPower</span><span class="p">)]);</span><span class="w"></span>
+<span class="k">end</span><span class="w"></span>
+</pre></div>
+</div>
+<p>When you input the letter <em>u</em>, the value of the variable <code class="docutils literal notranslate"><span class="pre">motorPower</span></code> is increased by 10. This is communicated to the brick by calling the <code class="docutils literal notranslate"><span class="pre">outputPower</span></code> function, specifying the motor port with <code class="docutils literal notranslate"><span class="pre">Device.MotorA</span></code>, and supplying the power value in <code class="docutils literal notranslate"><span class="pre">motorPower</span></code>. Note that the motor power is a percentage value in the range <code class="docutils literal notranslate"><span class="pre">-100..100</span></code>, which is why it is capped at 100 in the code.</p>
+<p>Note how the motor power is outputted to the console. First, the number is converted to a string by the <code class="docutils literal notranslate"><span class="pre">num2str</span></code> function. This is then combined into a vector of strings using the <code class="docutils literal notranslate"><span class="pre">[string1</span> <span class="pre">string2]</span></code> notation. Finally, this vector of strings is passed to the <code class="docutils literal notranslate"><span class="pre">disp</span></code> function.</p>
+<p>For those interested: the first argument of the <code class="docutils literal notranslate"><span class="pre">outputPower</span></code> function is the <em>usb chain level</em>. This only matters when you have several bricks chained together via USB cables. In that case you could send commands to other bricks by specifying the appropriate level. Since we will always work with a single brick, the usb chain level should always be 0.</p>
+<blockquote>
+<div><p><em>Task:</em> Implement an input method where you can specify the amount by which the motor power should change.</p>
+<p>Hint: You might want to search the internet for a Matlab function that turns strings into integers.</p>
+</div></blockquote>
+</section>
+<section id="tachometer">
+<h3>Tachometer<a class="headerlink" href="#tachometer" title="Permalink to this heading">¶</a></h3>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="c">% output the tachometer</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">userIn</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&#39;o&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="n">tacho</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">outputGetCount</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">Device</span><span class="p">.</span><span class="n">MotorA</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nb">disp</span><span class="p">([</span><span class="s">&#39;&gt; Tachometer: &#39;</span><span class="w"> </span><span class="nb">num2str</span><span class="p">(</span><span class="n">tacho</span><span class="p">)]);</span><span class="w"></span>
+<span class="k">end</span><span class="w"></span>
+</pre></div>
+</div>
+<p>When you input the letter <em>o</em>, the tachometer value of the motor is read an displayed. This value is the angle relative to the last time the tacho was cleared <strong>in degrees</strong>.</p>
+<blockquote>
+<div><p><em>Task:</em> Compute the average of all tacho measurements triggered by the input <em>o</em>. Output the result when the program is finishing.</p>
+<p>Hint: You might want to store each read value in a vector. Search the internet for how to add values to a vector in Matlab.</p>
+</div></blockquote>
+</section>
+<section id="sensor-reading">
+<h3>Sensor reading<a class="headerlink" href="#sensor-reading" title="Permalink to this heading">¶</a></h3>
+<p>This example program doesn’t read from any sensors. For an intro to sensors, check out the <span class="xref std std-doc">toolkit-sensors</span> page.</p>
+</section>
+</section>
+<section id="motor-control">
+<h2>Motor Control<a class="headerlink" href="#motor-control" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ev3-setup.html" class="btn btn-neutral float-left" title="EV3 Matlab Toolkit - Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ev3-sensors.html" class="btn btn-neutral float-right" title="EV3 Matlab Toolkit - Sensors Introduction and Low-Pass Filters" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2015, Dr Gábor Csányi, Mr Miklós A Danka.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

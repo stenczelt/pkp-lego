@@ -3,21 +3,21 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to PKP Lego Robot Course 2019 Documentation!
+Welcome to the Pembroke Lego Robot Course 2022 Documentation!
 ==========================================
 
 .. raw:: html
 
     <div style="text-align: center; color: red; font-size: 24px; font-weight: bold;">
-      Report deadline: Thursday (August 15) end-of-day<br />
-      Inventory deadline: Thursday (August 15) end-of-day<br />
-      Presentation & demo time: Wednesday (August 14) 15:15–18:00<br />
+      Report deadline: Thursday (July 28, 2022) end-of-day<br />
+      Inventory deadline: Thursday (July 28, 2022) end-of-day<br />
+      Presentation & demo time: Wednesday (July 27, 2022) 15:15–18:00<br />
     </div>
 
 Instructors:
 
 * **Dr Gábor Csányi** -- ``gc121 [AT] cam.ac.uk``
-* **Mr Mrinank Sharma** -- ``ms2314 [AT] cam.ac.uk``
+* **Mr Tamas Stenczel** -- ``t.k.stenczel [AT] gmail.com``
 
 .. image:: resources/picture-lego-pid.jpg
    :width: 100 %
@@ -34,13 +34,10 @@ Contents:
 
    overview
    inventory
-   matlab-intro
-   matlab-reference
-   toolkit-setup
-   toolkit-motors
-   toolkit-sensors
-   toolkit-motors-reference
-   toolkit-sensors-reference
+   python-intro
+   ev3-setup
+   ev3-motors
+   ev3-sensors
    pid
    project
    faq
