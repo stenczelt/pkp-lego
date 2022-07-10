@@ -11,6 +11,4 @@ Install the Sphinx Theme: https://github.com/snide/sphinx_rtd_theme
 
 # Pushing to the public instance
 
-When you commit changes and push them, a git hook will automatically build and publish the new version of the site.
-
-The site is reachable at www.miklosdanka.com/pkp-lego at the time of writing (2015-07-27).
+When you commit changes and push them, a git hook will automatically build and publish the new version of the site to http://gabor1.github.io/pkp-lego
