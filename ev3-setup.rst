@@ -8,9 +8,6 @@ Connecting to the EV3 Brick
 ---------------------------
 
 
-WiFi
-~~~~
-
 Wireless connection works by connecting both your computer and the EV3 brick to the same wireless network. The brick isn't by default capable of connecting to wireless networks: it requires a Netgear dongle. If the dongle is not plugged into the brick, plug in the dongle through the USB port on the EV3, and restart the brick.
 
 Using the EV3 menu, go to **Options > WiFi > Connections**. Select the wireless network you want to connect to, choose the encryption type, and enter the password. **We set up a dedicated wireless network for this course, named "Lego". There is no password, so for the Encryption, select "None"**. The brick's IP address is written on a sticker, but you can verify it under the **WiFi** menu. 
@@ -27,7 +24,7 @@ The brick regularly broadcasts information about its connection. If you're on Li
 
 	nc -ulk 3015
 
-Connecting to the EV3
+Interacting with the EV3 brick
 -----------------------
 
 Using the Explorer (top left) tab in VSCode, find the "EV3DEV DEVICE BROWSER" item and toggle the arrow, find the "ev3dev" device and click on it. Once the connection is established, the dot next to it turns green. 
