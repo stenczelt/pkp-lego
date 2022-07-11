@@ -13,7 +13,7 @@ You can share your reports and other files with the instructors and the rest of 
 Choosing a Project
 ---------------------
 
-Since you don't yet have experience with constructing and programming Mindstorms robots, it might feel difficult to tell what a project with the right size is. In order to engage the size and complexity of robot building projects, search YouTube for *EV3* (or for the older version, *NXT*), and check out the example projects below. Searching YouTube is also a good way to come up with project ideas.
+Since you don't yet have experience with constructing and programming Mindstorms robots, it might feel difficult to tell what a project with the right size is. In order to engage the size and complexity of robot building projects, search YouTube for *EV3* (or for the older version, *NXT*), and check out the example projects below. Searching YouTube is also a good way to come up with project ideas. (Beware that some of the more spectacular projects on YouTube would require more lego kit, and more time to build and program than what you have available here)
 
 Project suggestions:
 
