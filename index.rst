@@ -25,7 +25,7 @@ Instructors:
 
 .. Group mailing list: **pembroke-kings-programme-lego-2018 [AT] googlegroups.com**, https://groups.google.com/forum/#!forum/pembroke-kings-programme-lego-2018
 
-Please join the google group `here <https://groups.google.com/forum/#!forum/pkp-lego-2019>`_, and feel free to use the forum to discuss ideas with other course participants. 
+Please join the google group `here <https://groups.google.com/u/1/g/pembroke-lego-2022>`_, and feel free to use the forum to discuss ideas with other course participants. 
 
 Contents:
 
