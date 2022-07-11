@@ -72,4 +72,4 @@ The format of the final report is not specified, but at a minimum, it should inc
 
 Upload your report to `this shared Google Drive folder <https://drive.google.com/drive/folders/1pGE4Bnm-WuWdPsZBYDa7namHtbdc3hO1?usp=sharing>`_.
 
-The presentation will consist of 5 minutes of presentation (including a demo) and 2 minutes of Q&A.
+The presentation will consist of 5 minutes of presentation (including a live demo of your robot) and 2 minutes of Q&A.
