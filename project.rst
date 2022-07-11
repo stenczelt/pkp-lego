@@ -28,7 +28,7 @@ Project suggestions:
 
 Feel free to discuss your ideas and the project suggestions with the instructors. 
 
-Please *do not* choose a project with detailed build instructions from LEGO or elsewhere. You are missing the fun of designing your own machine!
+Please *do not* choose a project with detailed build instructions from LEGO or elsewhere. You would be missing the fun of designing your own machine!
 
 As you're making a decision, discuss your ideas with the instructors to make sure that you're choosing a project of the right complexity. **Get your project idea signed off by the instructors.**
 
