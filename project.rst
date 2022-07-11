@@ -40,7 +40,7 @@ Project Milestones
 
 When planning a project, it is impossible to predict exactly how much one can achieve in the given time frame. In order to deal with this uncertainty, we will work with *milestones* in this course.
 
-Imagine that your project is to measure the `gravitational acceleration <http://en.wikipedia.org/wiki/Gravitational_acceleration>`_ :math:`g`. This is a single goal, and because of the uncertainty of the many components required to build this project, you might not be able to complete the project on time, or the opposite, you might finish a week too early.
+Imagine that your project is to measure :math:`g`, this will be our example here. This is a single goal, and because of the uncertainty of the many components required to build this project, you might not be able to complete the project on time, or the opposite, you might finish a week too early.
 
 Thus, instead of setting a single goal, we will set several milestones that you can work towards. For the gravitational acceleration project, example milestones might be:
 
