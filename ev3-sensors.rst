@@ -21,7 +21,7 @@ Once connected to the brick, launch the built-in python interpreter
 
 Then import some python functions
 ::
-	from pybricks.hubs import EV3Brick
+  from pybricks.hubs import EV3Brick
   from pybricks.ev3devices import (
     ColorSensor,
     TouchSensor,
@@ -94,6 +94,6 @@ In other words, the first value is take as it is, but all following values are w
 
   *Task:* What does it mean if the smoothing factor is 0 or 1?
 
-  *Task:* Adapt your plotSensor code to send the signal through a low-pass filter. Make the smoothing factor easily customisable. Choose a sensor and observe the effects with high and low smoothing factors.
+  *Task:* Adapt your code to send the sensor signal through a low-pass filter. Make the smoothing factor easily customisable. Choose a sensor and observe the effects with high and low smoothing factors.
 
 For more details on low-pass filters, check out the `Low-pass filter Wikipedia article <http://en.wikipedia.org/wiki/Low-pass_filter>`_ and the `Exponentially-Weighted Moving Average Wikipedia article <http://en.wikipedia.org/wiki/Exponential_smoothing>`_.
