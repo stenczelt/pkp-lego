@@ -45,4 +45,11 @@ And now we can issue commands, here is the first one
 
 You can hopefully guess and hear what it did!
 
-You can exit from the python shell by pressing Ctrl-D. This kind of interactive environment is good for learning to use single commands, and sometimes for debugging, but for longer programs, it is cumbersome. Once you have a bigger program, you can download it onto the brick by hovering the cursor above the "EV3DEV DEVICE BROWSER" item and pressing on the down-arrow icon that appears on the right. It downloads the contents of your currently open folder from VSCode. A good way to open a new folder and start coding is by clicking on the EV3 tab (it has the symbol of the lego Mindstorm: <o>, rotated by 90 degrees) on the left and then selecting "Create a new project". It gives you a new file called "main.py" to start with, including some of the necessary import commands to start using motors and sensors. 
+You can exit from the python shell by pressing Ctrl-D. 
+
+Downloading programs to the EV3
+-----------------------------
+
+The interactive environment is good for learning to use single commands, and sometimes for debugging, but for longer programs, it is cumbersome. Once you have a bigger program, you can download it onto the brick by hovering the cursor above the "EV3DEV DEVICE BROWSER" item and pressing on the down-arrow icon that appears on the right. It downloads the contents of your currently open folder from VSCode. A good way to open a new folder and start coding is by clicking on the EV3 tab (it has the symbol of the lego Mindstorm: <o>, rotated by 90 degrees) on the left and then selecting "Create a new project". It gives you a new file called "main.py" to start with, including some of the necessary import commands to start using motors and sensors. 
+
+When you have a "main.py" from a project folder open, you can also select "run" from the menu (or press F5) and if your ev3dev is connected with a green light, VSCode will download your program and run it on the brick. 
