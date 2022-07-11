@@ -21,8 +21,14 @@ Project suggestions:
 #. Climb the stairs.
 #. Follow a line as fast as possible.
 #. Build a weight-measuring scale.
+#. Find a way out of a (small/simple) labyrinth.
+#. Locate a target and throw objects at/into it.
+#. Avoid light. 
+#. Play tic-tac-toe (ambitious but definitely possible)
 
-Feel free to discuss your ideas and the project suggestions with the instructors.
+Feel free to discuss your ideas and the project suggestions with the instructors. 
+
+Please *do not* choose a project with detailed build instructions from LEGO or elsewhere. You are missing the fun of designing your own machine!
 
 Finally, a tip: make sure both of you find the project exciting - that will help you concentrate throughout the course and fight the obstacles you'll encounter.
 
