@@ -1,4 +1,4 @@
-EV3 Matlab Toolkit - Sensors Introduction and Low-Pass Filters
+EV3 Sensors Introduction and Low-Pass Filters
 ============================================================================
 
 The EV3 Matlab toolkit provides a collection of functions to read sensors and control motors. Here, we will go through an example program to analyse and manipulate sensor data.
