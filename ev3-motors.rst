@@ -75,6 +75,10 @@ which reports the angle (in degrees) through which the motor has turned. We can 
 ::
 	m.reset_angle()
 
+Writing programs
+-----------------
+
+Now instead of using the brick interactively, write a simple program into the "main.py" file of a new project that moves a motor by a small amount. Download this program onto the brick and run it. In order to run downloaded programs, you will need to browse for them using the keys on the brick, and navigate to "main.py". 
 
 Further information
 -------------------
