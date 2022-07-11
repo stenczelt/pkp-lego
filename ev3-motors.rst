@@ -21,10 +21,10 @@ Once connected to the brick, launch the built-in python interpreter
 	brickrun -r -- pybricks-micropython
 
 Then import some python functions
-
 ::
 	from pybricks.hubs import EV3Brick
 	from pybricks.ev3devices import Motor
+
 
 Create a brick object: 
 ::
