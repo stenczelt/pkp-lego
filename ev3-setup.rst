@@ -32,16 +32,20 @@ Connecting to the EV3
 
 Using the Explorer (top left) tab in VSCode, find the "EV3DEV DEVICE BROWSER" item and toggle the arrow, find the "ev3dev" device and click on it. Once the connection is established, the dot next to it turns green. 
 
-You can now connect to the brick, by right-clicking on the green dot, and selecting "Open SSH Terminal". This will open a new window within VSCode and drop you into a linux command shell on the LEGO brick. In order to run python commands on it, type::
+You can now connect to the brick, by right-clicking on the green dot, and selecting "Open SSH Terminal". This will open a new window within VSCode and drop you into a linux command shell on the LEGO brick. In order to run python commands on it, type
+::
 	brickrun -r -- pybricks-micropython
 
-Once in the python environment, import a module::
+Once in the python environment, import a module
+::
 	from pybricks.hubs import EV3Brick
 
-Then create a python object that represents the brick::
+Then create a python object that represents the brick
+::
 	ev3 = EV3Brick()
 
-And now we can issue commands, here is the first one::
+And now we can issue commands, here is the first one
+::
 	ev3.speaker.beep()
 
 You can hopefully guess and hear what it did!
