@@ -1,4 +1,4 @@
-EV3 - Setup
+EV3 Setup
 =================================
 
 You will program your EV3 brick using python. We will access the brick interactively and also download programs to it using Visual Studio Code. 
