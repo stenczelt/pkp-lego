@@ -65,7 +65,21 @@ There is an even more controlled way, which actively holds the motor position at
 When you use the `hold` function, you can see that the motor cannot be turned by hand. To release, use a `stop` command. 
 
 Tachometer
-~~~~~~~~~~
+-----------
+
+As you can now tell, motor function is a bit more complicated than just "go" and "stop". In order to help us control the robot, it often helps to have an accurate picture of the state it is in, for example, just how far did the motors **actually** turn. We can access this information using the following function called
+::
+	m.angle()
+
+which reports the angle (in degrees) through which the motor has turned. We can reset the value of this internal angle sensor at any time using
+::
+	m.reset_angle()
+
+
+Further information
+-------------------
+
+The motors can do many more things than what is given on this page. VSCode has a link to the User Guide, which you can access from the Mindstorm <o> tab by selecting "Open user guide". Motors and sensors are discussed under the "ev3devices" section of the PYBRICKS MODULES heading. 
 
 
 
