@@ -8,7 +8,7 @@ Welcome to the Pembroke Lego Robot Course 2022 Documentation!
 
 .. raw:: html
 
-    <div style="text-align: center; color: red; font-size: 24px; font-weight: bold;">
+    <div style="text-align: center; color: red; font-size: 18px; font-weight: bold;">
       Report deadline: Thursday (July 28, 2022) end-of-day<br />
       Inventory deadline: Thursday (July 28, 2022) end-of-day<br />
       Presentation & demo time: Wednesday (July 27, 2022) 15:15–18:00<br />
