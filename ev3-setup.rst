@@ -1,56 +1,21 @@
-EV3 Matlab Toolkit - Setup
+EV3 - Setup
 =================================
 
-You will program your EV3 brick using a custom Matlab extension from the Queensland University of Technology. Their information on the library can be found on the `QUT EV3 Matlab toolkit <https://wiki.qut.edu.au/display/cyphy/QUT+EV3+MATLAB+toolkit>`_ page: use this page for reference. Here we will give you a quick introduction to the library.
-
-
-
-Getting the library
---------------------
-
-You can download a locally cached zip here: :download:`EV3-2014-07-16.zip<https://github.com/gabor1/pkp-lego/raw/master/resources/EV3-2014-07-16.zip>`.
-
-Unzip this folder (for example, to your home directory). Take note of the path (such as ``C:\pkp-lego\EV3``). In this documentation, we will reference this path as ``<EV3>``.
-
-
-
-Adding the library to Matlab
-----------------------------
-
-The library you downloaded is a collection of Matlab files. You can use this extension by including its files *on the path* so that they become available in your normal code.
-
-Under the Home ribbon and the Environment tab, go to **Set Path** and add the ``<EV3>`` path to the Matlab path.
-
-On some installations of Matlab, this might require Administrator privileges, so if you get this error, and you don't have admin rights, then simply keep all your own files in the same ``<EV3>`` directory, and it should all work - the current directory is always included on the path. 
+You will program your EV3 brick using python. We will access the brick interactively and also download programs to it using Visual Studio Code. 
 
 
 Connecting to the EV3 Brick
 ---------------------------
 
-USB
-~~~
-
-The easiest way to connect is by USB. Connect the EV3 brick to the computer.
-
-You can confirm that your connection works by typing in Matlab::
-
-	b = Brick('ioType','usb')
-
-If your connection is successful, you should't get any error messages.
-
-Note that if you want to create another connection, you have to first close this existing one by typing::
-
-	delete(b)
-
 
 WiFi
 ~~~~
 
-Wireless connection works by connecting both your computer and the EV3 brick to the same wireless network. The brick isn't by default capable of connecting to wireless networks: it requires a Netgear dongle. Plug in the dongle through the USB port on the EV3, and restart the brick.
+Wireless connection works by connecting both your computer and the EV3 brick to the same wireless network. The brick isn't by default capable of connecting to wireless networks: it requires a Netgear dongle. If the dongle is not plugged into the brick, plug in the dongle through the USB port on the EV3, and restart the brick.
 
-On the EV3 menu, go to **Options > WiFi > Connections**. Select the wireless network you want to connect to, choose the encryption type, and enter the password. **We set up a dedicated wireless network for this course, named "PKP-Lego". There is no password, so for the Encryption, select "None"** Note that the capitalization matters. Take note of the brick's IP address by going to **Options > WiFi > <your-connection>**.
+Using the EV3 menu, go to **Options > WiFi > Connections**. Select the wireless network you want to connect to, choose the encryption type, and enter the password. **We set up a dedicated wireless network for this course, named "Lego". There is no password, so for the Encryption, select "None"**. The brick's IP address is written on a sticker, but you can verify it under the **WiFi** menu. 
 
-On Linux/Mac, open a Terminal. On Windows, go to **Start > Run** and type **cmd**. You can confirm that your connection works by typing ``ping <brick-ip-address>``. The output should look like the following::
+From VSCode, open a Terminal. You can confirm that your connection works by typing ``ping <brick-ip-address>``. The output should look something like the following::
 
 	PING 192.168.1.82 (192.168.1.82): 56 data bytes
 	64 bytes from 192.168.1.82: icmp_seq=0 ttl=64 time=61.894 ms
@@ -62,50 +27,23 @@ The brick regularly broadcasts information about its connection. If you're on Li
 
 	nc -ulk 3015
 
-To open the wireless connection in Matlab, you need to give Matlab access to a java class file ``OutputStreamSend.class`` to the Matlab *java classpath*. To do this,  Add this file to the Matlab java classpath by typing ``javaaddpath('<EV3>')``. 
+Connecting to the EV3
+-----------------------
 
-Type the following in Matlab::
+Using the Explorer (top left) tab in VSCode, find the "EV3DEV DEVICE BROWSER" item and toggle the arrow, find the "ev3dev" device and click on it. Once the connection is established, the dot next to it turns green. 
 
-	b = Brick('ioType','wifi','wfAddr','<brick-ip-address>','wfPort',5555,'wfSN','<brick-serial-number>')
+You can now connect to the brick, by right-clicking on the green dot, and selecting "Open SSH Terminal". This will open a new window within VSCode and drop you into a linux command shell on the LEGO brick. In order to run python commands on it, type::
+	brickrun -r -- pybricks-micropython
 
-For example, I typed the following for my connection::
+Once in the python environment, import a module::
+	from pybricks.hubs import EV3Brick
 
-	b = Brick('ioType','wifi','wfAddr','192.168.1.104','wfPort',5555,'wfSN','001653444434')
+Then create a python object that represents the brick::
+	ev3 = EV3Brick()
 
-If your connection is successful, you should't get any error messages.
+And now we can issue commands, here is the first one::
+	ev3.speaker.beep()
 
-Note that if you want to create another connection, you have to first close this existing one by typing::
+You can hopefully guess and hear what it did!
 
-	delete(b)
-
-
-
-Ending the connection
----------------------
-
-Before you can start a new connection, you have to end the previous one. This is particularly important if your program didn't finish normally.
-
-You can end your connection by typing::
-
-	delete(b)
-
-Here, ``b`` is the variable for the brick to which you connected.
-
-
-An Important Note: Reliability & Robustness
--------------------------------------------
-The library that is used to control the EV3 brick is by no means perfect. For example, common issues found include:
-
-* Matlab keeps crashing! 
-* Programs behave differently each time they are run!
-
-These two problems can be solved in the software directly - you **must ensure that once you have finished with a ``brick object``, it is deleted** (e.g. you cannot create a new ``brick`` if an existing connection already exists - Matlab will crash). It is also a good idea to clear all local variables at the **start** of every program using the command ``clearvars`` - this helps to ensure that the program does the same thing every time. 
-
-In addition, the hardware is not perfect. All sensors have noise in their readings e.g. the colour sensor sometimes stops reading the right color (for a moment or so). 
-
-Therefore, it is **incredibly important** to design your functions and systems to be reliable and robust as possible. In addition to the steps mentioned above, some methods of doing this could include:
-
-* Time averaging sensor readings. 
-* Using the motor tachometer rather than using time delays. 
-
-[Many more methods are possible].
+You can exit from the python shell by pressing Ctrl-D. This kind of interactive environment is good for learning to use single commands, and sometimes for debugging, but for longer programs, it is cumbersome. Once you have a bigger program, you can download it onto the brick by hovering the cursor above the "EV3DEV DEVICE BROWSER" item and pressing on the down-arrow icon that appears on the right. It downloads the contents of your currently open folder from VSCode. A good way to open a new folder and start coding is by clicking on the EV3 tab (it has the symbol of the lego Mindstorm: <o>, rotated by 90 degrees) on the left and then selecting "Create a new project". It gives you a new file called "main.py" to start with, including some of the necessary import commands to start using motors and sensors. 
