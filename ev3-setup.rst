@@ -20,9 +20,7 @@ From VSCode, open a Terminal. You can confirm that your connection works by typi
 	64 bytes from 192.168.1.82: icmp_seq=2 ttl=64 time=6.664 ms
 	64 bytes from 192.168.1.82: icmp_seq=3 ttl=64 time=6.266 ms
 
-The brick regularly broadcasts information about its connection. If you're on Linux/Mac, you can observe this by typing the following to the Terminal::
 
-	nc -ulk 3015
 
 Interacting with the EV3 brick
 -----------------------
