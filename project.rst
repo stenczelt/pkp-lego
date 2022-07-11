@@ -65,7 +65,7 @@ You will finish the course by preparing a final project report and presenting yo
 The format of the final report is not specified, but at a minimum, it should include the following:
 
 * Your original plan and what you achieved of it
-* Documentation of your final construct (the construct architecture and the working of the MATLAB program)
+* Documentation of your final construct (the mechanical architecture and the working of the program)
 * The challenges you encountered and the design decisions you made; the evolution of your construct and program
 
     * This is a really important part of the report: it shows that you thought about your decisions and you learnt from what you observed. Did you have a construct that didn't work the first time, that was inaccurate the second time, but worked the third time? Did you have some code which returned noisy signal the first time but a transformation has fixed it? Write about it: the learning process is the most interesting part.
