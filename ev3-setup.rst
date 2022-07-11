@@ -47,6 +47,8 @@ You can hopefully guess and hear what it did!
 
 You can exit from the python shell by pressing Ctrl-D. 
 
+(Make sure you are not connecting to *someone else's brick* by mistake. Each computer should default to connecting to the corresponding brick, but they all see each other over the wireless network!)
+
 Downloading programs to the EV3
 -----------------------------
 
