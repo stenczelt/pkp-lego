@@ -12,7 +12,7 @@ Wireless connection works by connecting both your computer and the EV3 brick to 
 
 Using the EV3 menu, go to **Options > WiFi > Connections**. Select the wireless network you want to connect to, choose the encryption type, and enter the password. **We set up a dedicated wireless network for this course, named "Lego". There is no password, so for the Encryption, select "None"**. The brick's IP address is written on a sticker, but you can verify it under the **WiFi** menu. 
 
-From VSCode, open a Terminal. You can confirm that your connection works by typing ``ping <brick-ip-address>``. The output should look something like the following::
+On the computer, locate and launch the Visual Studio Code (VSCode) application, we will be using it for everything in this class. From VSCode, open a command line Terminal. You can confirm that your connection to the brick works by typing ``ping <brick-ip-address>`` into the terminal. The output should look something like the following::
 
 	PING 192.168.1.82 (192.168.1.82): 56 data bytes
 	64 bytes from 192.168.1.82: icmp_seq=0 ttl=64 time=61.894 ms
