@@ -71,6 +71,11 @@ and the distance to an object is accessed using
 
 which returns the value in mm. Experiment with measuring distances. There is a minimum and maximum distance between which the sensor is active. At large distances, the size and shape of the object in front of the sensor also matters. 
 
+A Sensory Motor Exercise
+------------------------
+
+Try to write a program that turns a motor while a button is pressed and stops the motor when the button is released. 
+
 Low-pass filters
 ------------------
 
