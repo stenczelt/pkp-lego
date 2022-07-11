@@ -30,10 +30,9 @@ Feel free to discuss your ideas and the project suggestions with the instructors
 
 Please *do not* choose a project with detailed build instructions from LEGO or elsewhere. You are missing the fun of designing your own machine!
 
+As you're making a decision, discuss your ideas with the instructors to make sure that you're choosing a project of the right complexity. **Gt your project idea signed off by the instructors.**
+
 Finally, a tip: make sure both of you find the project exciting - that will help you concentrate throughout the course and fight the obstacles you'll encounter.
-
-As you're making a decision, discuss your ideas with the instructors to make sure that you're choosing a project of the right complexity. **Finally, get your project idea signed off by the instructors.**
-
 
 
 Project Milestones
