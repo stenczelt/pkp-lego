@@ -12,6 +12,8 @@ This part of the tutorial assumes that you connected to the EV3 in interactive m
 
 Attach one of the big motors to Port A on the brick, the other one to Port B, and the third small motor to Port C. The motors always need to be attached to the ports marked with letters. 
 
+.. image:: resources/monster.jpg
+
 
 Initialise 
 ----------
