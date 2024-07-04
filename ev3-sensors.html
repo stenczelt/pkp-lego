@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EV3 Sensors Introduction and Low-Pass Filters &mdash; PKP Lego Robotics 2.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+    <link rel="shortcut icon" href="_static/lego-designer.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script async="async" src="_static/mathjax-v2.3-9-g78ea6af/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PID Controller" href="pid.html" />
+    <link rel="prev" title="EV3 Motors Introduction" href="ev3-motors.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            PKP Lego Robotics
+          </a>
+              <div class="version">
+                2.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Course Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inventory.html">LEGO Inventory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python-intro.html">Python Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ev3-setup.html">EV3 Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ev3-motors.html">EV3 Motors Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EV3 Sensors Introduction and Low-Pass Filters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#initialise">Initialise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#measuring-sensor-values">Measuring sensor values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a-sensory-motor-exercise">A Sensory Motor Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#low-pass-filters">Low-pass filters</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pid.html">PID Controller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Project Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PKP Lego Robotics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">EV3 Sensors Introduction and Low-Pass Filters</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ev3-sensors.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ev3-sensors-introduction-and-low-pass-filters">
+<h1>EV3 Sensors Introduction and Low-Pass Filters<a class="headerlink" href="#ev3-sensors-introduction-and-low-pass-filters" title="Link to this heading">¶</a></h1>
+<p>The EV3 python interface provides a collection of functions to read sensors and control motors. Here, we will go through an introduction to sensors.</p>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">¶</a></h2>
+<p>This part of the tutorial assumes that you connected to the EV3 in interactive mode, via SSH. Complete the <a class="reference internal" href="ev3-setup.html"><span class="doc">EV3 Setup</span></a> section before proceeding.</p>
+<p>Attach a touch sensor to Port 1, the light sensor to Port 2, and the ultrasonic sensor to Port 3. The sensors always need to be attached to the ports marked with numbers.</p>
+</section>
+<section id="initialise">
+<h2>Initialise<a class="headerlink" href="#initialise" title="Link to this heading">¶</a></h2>
+<p>Once connected to the brick, launch the built-in python interpreter</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">brickrun</span><span class="w"> </span><span class="o">-</span><span class="n">r</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="n">pybricks</span><span class="o">-</span><span class="n">micropython</span>
+</pre></div>
+</div>
+<p>Then import some python functions</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">from</span><span class="w"> </span><span class="s">pybricks.hubs</span><span class="w"> </span><span class="s">import</span><span class="w"> </span><span class="s">EV3Brick</span>
+<span class="n">from</span><span class="w"> </span><span class="s">pybricks.ev3devices</span><span class="w"> </span><span class="s">import</span><span class="w"> </span><span class="s">(</span>
+<span class="w">  </span><span class="n">ColorSensor</span><span class="p">,</span>
+<span class="w">  </span><span class="n">TouchSensor</span><span class="p">,</span>
+<span class="w">  </span><span class="n">UltrasonicSensor</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">from</span><span class="w"> </span><span class="s">pybricks.tools</span><span class="w"> </span><span class="s">import</span><span class="w"> </span><span class="s">wait</span>
+</pre></div>
+</div>
+<p>Create a brick object</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">ev3</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">EV3Brick</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>And then a sensor object</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">TouchSensor</span><span class="p">(</span><span class="n">Port</span><span class="p">.</span><span class="n">S1</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="measuring-sensor-values">
+<h2>Measuring sensor values<a class="headerlink" href="#measuring-sensor-values" title="Link to this heading">¶</a></h2>
+<p>In order to test the sensor, we don’t just want to read it once, we need to read it continuously in a loop, so that when something happens, the change in state is picked up. However, issuing many read commands in rapid succession would overwhelm the brick, so we need to wait a little time between each successive attempt to read the sensor, like so</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="k">while</span><span class="w"> </span><span class="n">True</span><span class="p">:</span>
+<span class="w">  </span><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">pressed</span><span class="p">())</span>
+<span class="w">  </span><span class="nb">wait</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <cite>wait</cite> command as above will stop the execution of the program for 200 milliseconds before allowing it to go around the loop again. Run the above program, and then press the touch sensor. To break out of the loop, you can press Ctrl-C. Be careful with such “infinite loops”, once you ar not in interactive mode, it is hard to get out of them!</p>
+<p>Now try the other sensors. The light sensor is initialised using</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="p">.</span><span class="n">ColorSensor</span><span class="p">(</span><span class="n">Port</span><span class="p">.</span><span class="n">S2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It is multifunctional, it can detect the ambient level of light, the brightness of a reflecting surface, and the colour of a surface. These are accessed by the following challenges</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="p">.</span><span class="n">ambient</span><span class="p">()</span>
+<span class="n">s</span><span class="p">.</span><span class="n">reflection</span><span class="p">()</span>
+<span class="n">s</span><span class="p">.</span><span class="n">color</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Experiment by interacting with the sensor and note the values you see in each case. What are the minimum and maximum values returned?</p>
+<p>The ultrasonic sensor measures distances. It is initialised using</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="p">.</span><span class="n">UltrasonicSensor</span><span class="p">(</span><span class="n">Port</span><span class="p">.</span><span class="n">S3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and the distance to an object is accessed using</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="p">.</span><span class="n">distance</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>which returns the value in mm. Experiment with measuring distances. There is a minimum and maximum distance between which the sensor is active. At large distances, the size and shape of the object in front of the sensor also matters.</p>
+</section>
+<section id="a-sensory-motor-exercise">
+<h2>A Sensory Motor Exercise<a class="headerlink" href="#a-sensory-motor-exercise" title="Link to this heading">¶</a></h2>
+<p>Try to write a program that turns a motor while a button is pressed and stops the motor when the button is released.</p>
+</section>
+<section id="low-pass-filters">
+<h2>Low-pass filters<a class="headerlink" href="#low-pass-filters" title="Link to this heading">¶</a></h2>
+<p>You might notice that the signal you see is sometimes noisy or changes too sharply. One way to mitigate these sharp changes is to send the signal through a <em>low-pass filter</em>. This is called a low-pass filter because it filters out high frequencies, that is, sharp changes.</p>
+<p>A discrete implementation of the low-pass filter is called the <em>Exponentially-Weighted Moving Average</em>. It is computed as the following. Imagine that the original values you read are <span class="math notranslate nohighlight">\(x_0, x_1, x_2\ldots\)</span>. We choose a <em>smoothing factor</em> <span class="math notranslate nohighlight">\(\alpha\)</span>, which determines how aggressively we’ll filter the signal. Then to compute the filtered values <span class="math notranslate nohighlight">\(y_0, y_1, y_2\ldots\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+y_0 &amp;= x_0 \\
+y_{k+1} &amp;= \alpha x_{k+1} + (1 - \alpha) y_k
+\end{aligned}\end{split}\]</div>
+<p>In other words, the first value is take as it is, but all following values are weighted by the smoothing factor <span class="math notranslate nohighlight">\(\alpha\)</span> and combined with the previous value.</p>
+<blockquote>
+<div><p><em>Task:</em> What does it mean if the smoothing factor is 0 or 1?</p>
+<p><em>Task:</em> Adapt your code to send the sensor signal through a low-pass filter. Make the smoothing factor easily customisable. Choose a sensor and observe the effects with high and low smoothing factors.</p>
+</div></blockquote>
+<p>For more details on low-pass filters, check out the <a class="reference external" href="http://en.wikipedia.org/wiki/Low-pass_filter">Low-pass filter Wikipedia article</a> and the <a class="reference external" href="http://en.wikipedia.org/wiki/Exponential_smoothing">Exponentially-Weighted Moving Average Wikipedia article</a>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ev3-motors.html" class="btn btn-neutral float-left" title="EV3 Motors Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pid.html" class="btn btn-neutral float-right" title="PID Controller" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2015, Dr Gábor Csányi, Mr Miklós A Danka.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
