@@ -75,6 +75,6 @@ The format of the final report is not specified, but at a minimum, it should inc
 
     * This is a really important part of the report: it shows that you thought about your decisions and you learnt from what you observed. Did you have a construct that didn't work the first time, that was inaccurate the second time, but worked the third time? Did you have some code which returned noisy signal the first time but a transformation has fixed it? Write about it: the learning process is the most interesting part.
 
-Upload your report to `this shared Google Drive folder <https://drive.google.com/drive/folders/1H8qhSu2D62Y_FxDHNEdpgCOuPqFCQ4ko>`_.
+Upload your report to `this shared Google Drive folder <https://drive.google.com/drive/folders/1tSt9ut87khOBa6fGmI5B59QXAmYQhGk4?usp=sharing>`_.
 
 The presentation will consist of 5 minutes of presentation (including a live demo of your robot) and 2 minutes of Q&A.
