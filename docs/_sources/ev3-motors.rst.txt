@@ -1,114 +1,93 @@
-EV3 Matlab Toolkit - Motors Introduction
+EV3 Motors Introduction
 ===========================================
 
-The EV3 Matlab toolkit provides a collection of functions to read sensors and control motors. Here, we will go through an introduction to motor control.
+The EV3 python interface provides a collection of functions to read sensors and control motors. Here, we will go through an introduction to motor control.
 
 
 
 Prerequisites
 -------------
 
-This part of the tutorial assumes that you connected Matlab to the EV3 via USB. Complete the :doc:`toolkit-setup` section before proceeding.
+This part of the tutorial assumes that you connected to the EV3 in interactive mode, via SSH. Complete the :doc:`ev3-setup` section before proceeding.
 
-Also attach one of the motors to Port A on the brick.
+Attach one of the big motors to Port A on the brick, the other one to Port B, and the third small motor to Port C. The motors always need to be attached to the ports marked with letters. 
 
-Don't forget that when you want to start a new connection, you have to end the previous one first with ``delete(b)``.
+.. image:: resources/monster.jpg
 
 
+Initialise 
+----------
 
-Example program
----------------
-
-Open Matlab, and open the ``Example.m`` file from your ``<EV3>`` directory. (You can also download it from here: :download:`Example.m <https://github.com/gabor1/pkp-lego/raw/master/resources/Example.m>`.)
-
-This example program demonstrates some of the functionality of the EV3 Matlab toolkit. The program will give you some basic interactive control over a motor connected to Port A.
-
-Start the program, and play around with it using the instructions printed after start. Start the motors, and check the readings from the tachometer.
-
-	*Task:* What does the tachometer measure?
-
-Let's inspect this program now.
-
-Initialisation
-~~~~~~~~~~~~~~
-
+Once connected to the brick, launch the built-in python interpreter
 ::
+	brickrun -r -- pybricks-micropython
 
-	% init the connection
-	disp('Connecting ... ')
-	% brick usb init
-	b = Brick('ioType','usb');
-	% beep to indicate connection
-	b.beep();
-
-As you know already, ``disp`` outputs a string to the Matlab console. We then initiate a connection via USB to the brick. Note that if you want to run this example through wireless, you could follow the instructions in :doc:`toolkit-setup`, and change this block of code to create a wireless connection. Finally, the successful connection is signalled by a beep.
-
-**Important: **if you are trying to use a motor, the motor must also be initialised. This can be done using the command ``b.outputStart(0,Device.MotorA)``. Don't forget to do this - otherwise, the motor will do nothing!
-
-User input
-~~~~~~~~~~
-
+Then import some python functions
 ::
+	from pybricks.hubs import EV3Brick
+	from pybricks.ev3devices import Motor
+	from pybricks.parameters import Port
 
-	% user input
-	userIn = '';
-	...
-	while(~strcmp(userIn,'f'))
-	  % get input
-	  userIn = input('> Input(u,d,t,s,b,o,c,v,f): ','s');
-	  ...
-	end
 
-Your input is monitored in a while loop. The condition for entering the while loop is that the user input (stored in the ``userIn`` variable) be not equal to the letter *f*. So next time you input *f*, the while loop won't be entered, and the program will finish by closing the connection to the brick.
+Create a brick object: 
+::
+	ev3 = EV3Brick()
+
+And then a motor object. Notice how you need to specify the port it is connected to. 
+::
+	m = Motor(Port.A)
+	
+If you specify a port with no motor connected, you get an error. Try it!
+
+Now we can issue commands
+::
+	m.run(200)
+
+This gets the motor going at a speed of 200 degrees (of angle) per second. We get the command prompt back, and can continue to do things, while the motor keeps running. In order to stop it, we can issue another command
+::
+	m.stop()
+
+Try all your motors. Run them simultaneously. 
 
 Speed control
-~~~~~~~~~~~~~
+--------------
 
+Play around with different motor speeds. At very low speed, the motor will stutter, because of friction.  Find the smallest speed at which your motor turns reliably. If you want something to turn very slowly but steadily, you will need to build a **gearbox**, i.e. run the motor faster, but have it connect to a small gear then a large gear, so the latter turns more slowly.
+
+Many ways to stop
+------------------
+
+There are several ways to stop a motor. You can just stop applying power to it entirely, or you can also break by counteractive the voltage generated as the motor turns a bit due to its angular momentum. This latter functionality is available via the function
 ::
+	m.brake()
 
-	% increase speed
-	if (userIn == 'u')
-	  motorPower = motorPower+10;
-	  if motorPower >= 100
-	    motorPower = 100;
-	  end
-	  b.outputPower(0,Device.MotorA,motorPower)
-	  disp(['> Motor Power: ' num2str(motorPower)]);
-	end
+There is an even more controlled way, which actively holds the motor position at the place where it was when you issue the command. The motor remains under power, so e.g. it can hold a weight that is being lifted. You can attach an arm to the motor and weight the end with antoher piece to see the difference. Make sure that there is space for the arm to fully turn, otherwise you risk breaking pieces. 
+::
+	m.hold()
 
-When you input the letter *u*, the value of the variable ``motorPower`` is increased by 10. This is communicated to the brick by calling the ``outputPower`` function, specifying the motor port with ``Device.MotorA``, and supplying the power value in ``motorPower``. Note that the motor power is a percentage value in the range ``-100..100``, which is why it is capped at 100 in the code.
-
-Note how the motor power is outputted to the console. First, the number is converted to a string by the ``num2str`` function. This is then combined into a vector of strings using the ``[string1 string2]`` notation. Finally, this vector of strings is passed to the ``disp`` function.
-
-For those interested: the first argument of the ``outputPower`` function is the *usb chain level*. This only matters when you have several bricks chained together via USB cables. In that case you could send commands to other bricks by specifying the appropriate level. Since we will always work with a single brick, the usb chain level should always be 0.
-
-	*Task:* Implement an input method where you can specify the amount by which the motor power should change.
-
-	Hint: You might want to search the internet for a Matlab function that turns strings into integers.
+When you use the `hold` function, you can see that the motor cannot be turned by hand. To release, use a `stop` command. 
 
 Tachometer
-~~~~~~~~~~
+-----------
 
+As you can now tell, motor function is a bit more complicated than just "go" and "stop". In order to help us control the robot, it often helps to have an accurate picture of the state it is in, for example, just how far did the motors **actually** turn. We can access this information using the following function called
 ::
+	m.angle()
 
-	% output the tachometer
-	if (userIn == 'o')
-	tacho = b.outputGetCount(0,Device.MotorA);
-	  disp(['> Tachometer: ' num2str(tacho)]);
-	end
+which reports the angle (in degrees) through which the motor has turned. We can reset the value of this internal angle sensor at any time using
+::
+	m.reset_angle()
 
-When you input the letter *o*, the tachometer value of the motor is read an displayed. This value is the angle relative to the last time the tacho was cleared **in degrees**.
+Writing programs
+-----------------
 
-	*Task:* Compute the average of all tacho measurements triggered by the input *o*. Output the result when the program is finishing.
+Now instead of using the brick interactively, write a simple program into the "main.py" file of a new project that moves a motor by a small amount. Download this program onto the brick and run it. In order to run downloaded programs, you will need to browse for them using the keys on the brick, and navigate to "main.py". 
 
-	Hint: You might want to store each read value in a vector. Search the internet for how to add values to a vector in Matlab.
+Further information
+-------------------
 
-Sensor reading
-~~~~~~~~~~~~~~
-
-This example program doesn't read from any sensors. For an intro to sensors, check out the :doc:`toolkit-sensors` page.
+The motors can do many more things than what is given on this page. VSCode has a link to the User Guide, which you can access from the Mindstorm <o> tab by selecting "Open user guide". Motors and sensors are discussed under the "ev3devices" section of the PYBRICKS MODULES heading. 
 
 
 
-Motor Control
----------------
+
