@@ -51,8 +51,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'PKP Lego Robotics'
-copyright = u'2015, Dr Gábor Csányi, Mr Miklós A Danka'
+project = u'Pembroke Lego Robotics'
+copyright = u'2015-2024, Mr Tamás K. Stenczel, Dr Gábor Csányi, Mr Miklós A Danka'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
