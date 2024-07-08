@@ -44,13 +44,7 @@ There are a few deliverables throughout the course that you should submit to the
 Timetable
 ----------
 
-The scheduling of this class is unique.
-Although the official Pembroke Summer Programme timetable allocates slots to us, meeting only at those timetabled slots would not work because there are a lot of you, and we like to talk to each group individually, and more often than those slots would allow.
-So the way we run this course is that you have all-day (8:45am to 6pm) access to the classroom on weekdays, spend as much time here as you wish.
-
-We will be on hand **every weekday** between 9-10am to answer questions, give advice, engage you in conversation about your robots.
-We will often stop by towards the end of the workday as well to see if anyone is around and needs something.
-We know that you have other classes too that will clash with the morning slots sometimes, and this is fine, you will not miss anything that can't be covered the next day.
+The scheduling of this class is unique. Although the official Pembroke Summer Programme timetable allocates slots to us, meeting only at those timetabled slots would not work because there are a lot of you, and we like to talk to each group individually, and more often than those slots would allow. So the way we run this course is that you have 24 hour access to the classroom, spend as much time here as you wish. We will be on hand **every weekday** between 9-10am to answer questions, give advice, engage you in conversation about your robots. We will often stop by towards the end of the workday as well to see if anyone is around and needs something. We know that you have other classes too that will clash with the morning slots sometimes, and this is fine, you will not miss anything that can't be covered the next day.  
 
 Week 1
 ~~~~~~

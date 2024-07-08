@@ -23,7 +23,7 @@ On the computer, locate and launch the Visual Studio Code (VSCode) application, 
 
 
 Interacting with the EV3 brick
-------------------------------
+-----------------------
 
 Using the Explorer (top left) tab in VSCode, find the "EV3DEV DEVICE BROWSER" item and toggle the arrow, find the "ev3dev" device and click on it. Once the connection is established, the dot next to it turns green. 
 
@@ -50,7 +50,7 @@ You can exit from the python shell by pressing Ctrl-D.
 (Make sure you are not connecting to *someone else's brick* by mistake. Each computer should default to connecting to the corresponding brick, but they all see each other over the wireless network!)
 
 Downloading programs to the EV3
--------------------------------
+-----------------------------
 
 The interactive environment is good for learning to use single commands, and sometimes for debugging, but for longer programs, it is cumbersome. Once you have a bigger program, you can download it onto the brick by hovering the cursor above the "EV3DEV DEVICE BROWSER" item and pressing on the down-arrow icon that appears on the right. It downloads the contents of your currently open folder from VSCode. A good way to open a new folder and start coding is by clicking on the EV3 tab (it has the symbol of the lego Mindstorm: <o>, rotated by 90 degrees) on the left and then selecting "Create a new project". It gives you a new file called "main.py" to start with, including some of the necessary import commands to start using motors and sensors. 
 
