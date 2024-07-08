@@ -51,7 +51,7 @@ The `wait` command as above will stop the execution of the program for 200 milli
 
 Now try the other sensors. The light sensor is initialised using
 ::
-  s.ColorSensor(Port.S2)
+  s = ColorSensor(Port.S2)
 
 It is multifunctional, it can detect the ambient level of light, the brightness of a reflecting surface, and the colour of a surface. These are accessed by the following challenges
 ::
@@ -63,7 +63,7 @@ Experiment by interacting with the sensor and note the values you see in each ca
 
 The ultrasonic sensor measures distances. It is initialised using
 ::
-  s.UltrasonicSensor(Port.S3)
+  s = UltrasonicSensor(Port.S3)
 
 and the distance to an object is accessed using
 ::
