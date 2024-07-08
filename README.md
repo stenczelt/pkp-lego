@@ -13,4 +13,4 @@ Install a python environment from `requirements.txt`
 
 # Pushing to the public instance
 
-When you commit changes and push them, a git hook will automatically build and publish the new version of the site to http://gabor1.github.io/pkp-lego
+When you commit changes and push them, a git hook will automatically build and publish the new version of the site to http://stenczelt.github.io/pkp-lego
