@@ -16,7 +16,7 @@ Welcome to the Pembroke Lego Robot Course 2024 Documentation!
 
 Instructors:
 
-* **Mr Tamas Stenczel** -- ``tks32 [AT] cam.ac.uk``
+* **Mr Tamás K. Stenczel** -- ``tks32 [AT] cam.ac.uk``
 * **Mrs Eszter Varga-Umbrich** -- ``ev333 [AT] cam.ac.uk``
 
 .. image:: resources/picture-lego-pid.jpg
