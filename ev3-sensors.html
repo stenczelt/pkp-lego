@@ -133,7 +133,7 @@
 </div>
 <p>The <cite>wait</cite> command as above will stop the execution of the program for 200 milliseconds before allowing it to go around the loop again. Run the above program, and then press the touch sensor. To break out of the loop, you can press Ctrl-C. Be careful with such “infinite loops”, once you ar not in interactive mode, it is hard to get out of them!</p>
 <p>Now try the other sensors. The light sensor is initialised using</p>
-<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="p">.</span><span class="n">ColorSensor</span><span class="p">(</span><span class="n">Port</span><span class="p">.</span><span class="n">S2</span><span class="p">)</span>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">ColorSensor</span><span class="p">(</span><span class="n">Port</span><span class="p">.</span><span class="n">S2</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>It is multifunctional, it can detect the ambient level of light, the brightness of a reflecting surface, and the colour of a surface. These are accessed by the following challenges</p>
@@ -144,7 +144,7 @@
 </div>
 <p>Experiment by interacting with the sensor and note the values you see in each case. What are the minimum and maximum values returned?</p>
 <p>The ultrasonic sensor measures distances. It is initialised using</p>
-<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="p">.</span><span class="n">UltrasonicSensor</span><span class="p">(</span><span class="n">Port</span><span class="p">.</span><span class="n">S3</span><span class="p">)</span>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">UltrasonicSensor</span><span class="p">(</span><span class="n">Port</span><span class="p">.</span><span class="n">S3</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>and the distance to an object is accessed using</p>
