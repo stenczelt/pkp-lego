@@ -25,6 +25,16 @@ Project suggestions:
 #. Locate a target and throw objects at/into it.
 #. Avoid light. 
 #. Play tic-tac-toe (ambitious but definitely possible)
+#. Draw/print on paper.
+
+.. shooters:
+.. - https://www.youtube.com/watch?v=yOPmGgQQWW4
+.. - https://www.youtube.com/watch?v=TIttVm-y0jA
+.. - https://www.youtube.com/watch?v=F-lgwz3uzUg
+.. walking machines:
+.. - https://www.youtube.com/watch?v=b5E-VyQOfNM
+.. printers
+.. - https://www.youtube.com/watch?v=dHmgaLgFRGM
 
 Feel free to discuss your ideas and the project suggestions with the instructors. 
 
@@ -59,6 +69,17 @@ These milestones are great because:
 As part of your project plan, set some milestones. Also include an estimate of when you plan to be ready with each milestone. (Don't worry, we'll revisit the time estimates each week.) **Make sure that you submit and get your milestones signed off by the instructors.**
 
 Note that the primary purpose of plans is not to follow them word by word, but rather to give you a mental model of how you're doing with your project. In this spirit, you should regularly revisit your milestones to understand whether you're project is tracking and to see where you should alter your plan.
+
+
+Further Project Ideas
+---------------------
+
+* Walking machines - Theo Jansen's kinetic sculptures
+* Machines identifying and shooting at targets
+* Drawing robots
+
+
+
 
 
 
