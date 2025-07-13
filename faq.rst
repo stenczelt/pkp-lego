@@ -13,7 +13,7 @@ If your card still doesn't work, get in touch with the instructors and the PSP c
 
 
 The brick doesn't connect to the WiFi network
------------------------------------------
+---------------------------------------------
 
 You can confirm that the wireless dongle works by checking whether the blue light on the dongle is on/blinking.
 
