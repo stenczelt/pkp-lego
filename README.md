@@ -1,16 +1,17 @@
 # Setup
 
-Install Sphinx: 
-http://sphinx-doc.org/latest/install.html#mac-os-x-install-sphinx-using-macports
+Install a python environment from `requirements.txt`
 
-Install the Sphinx Theme: https://github.com/snide/sphinx_rtd_theme
+```bash
+python3 -m venv venv
+source ./venv/bin/activate
+python -m pip install -r requirements.txt
+```
 
 # Build the docs
 
-Install a python environment from `requirements.txt`
-
 1. Run `make html`
-2. Open the results at `docs/index.html`
+2. Open the results at `_build/index.html`
 
 # Pushing to the public instance
 

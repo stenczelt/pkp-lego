@@ -9,9 +9,12 @@ Welcome to the Pembroke Lego Robot Course 2025 Documentation!
 .. raw:: html
 
     <div style="text-align: center; color: red; font-size: 18px; font-weight: bold;">
-      Report deadline: Friday (Aug 01, 2025) 6:30pm <br />
-      Inventory deadline: Friday (Aug 01, 2025) 6:30pm <br />
-      Presentation & demo time: Friday (Aug 01, 2025) 08:45–11:30am <br />
+      Intro Lecture: Monday 14 Jul 4:45pm <br />
+      PID Lecture: Tuesday 15 Jul 8:45am <br />
+      <br />
+      Report deadline: Friday, Aug 01, 2025 6:30pm <br />
+      Inventory deadline: Friday, Aug 01, 2025) 6:30pm <br />
+      Presentation & demo time: Friday, Aug 01, 2025 08:45–11:30am <br />
     </div>
 
 Instructors:
@@ -24,9 +27,7 @@ Instructors:
    :width: 100 %
    :align: center
 
-.. Group mailing list: **pembroke-kings-programme-lego-2018 [AT] googlegroups.com**, https://groups.google.com/forum/#!forum/pembroke-kings-programme-lego-2018
-
-.. Please join the google group `here <https://groups.google.com/u/2/g/pembroke-lego-2024>`_, and feel free to use the forum to discuss ideas with other course participants.
+Please join the google group `here <https://groups.google.com/u/2/g/pembroke-lego-2025>`_, and feel free to use the forum to discuss ideas with other course participants.
 
 Contents:
 ---------
