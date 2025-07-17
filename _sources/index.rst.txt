@@ -41,6 +41,7 @@ Contents:
    ev3-setup
    ev3-motors
    ev3-sensors
+   further-reading
    pid
    project
    faq

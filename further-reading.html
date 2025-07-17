@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Python Introduction &mdash; Pembroke Lego Robotics 2025.07.13-pre documentation</title>
+  <title>Further Reading &mdash; Pembroke Lego Robotics 2025.07.13-pre documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -15,12 +15,11 @@
       <script src="_static/documentation_options.js?v=3d947933"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script async="async" src="_static/mathjax-v2.3-9-g78ea6af/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="EV3 Setup" href="ev3-setup.html" />
-    <link rel="prev" title="LEGO Inventory" href="inventory.html" /> 
+    <link rel="next" title="PID Controller" href="pid.html" />
+    <link rel="prev" title="EV3 Sensors Introduction and Low-Pass Filters" href="ev3-sensors.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,14 +44,11 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Course Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inventory.html">LEGO Inventory</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Python Introduction</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="python-intro.html">Python Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ev3-setup.html">EV3 Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ev3-motors.html">EV3 Motors Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ev3-sensors.html">EV3 Sensors Introduction and Low-Pass Filters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="further-reading.html">Further Reading</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Further Reading</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pid.html">PID Controller</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project.html">Project Planning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
@@ -72,9 +68,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Python Introduction</li>
+      <li class="breadcrumb-item active">Further Reading</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/python-intro.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/further-reading.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -82,25 +78,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="python-introduction">
-<h1>Python Introduction<a class="headerlink" href="#python-introduction" title="Link to this heading">¶</a></h1>
-<p>Python is a generic programming language, and we can use it to program the EV3 LEGO brick.  If you have used python before, you can skip this section, and go straight to the next one to learn how to connect to the LEGO brick.</p>
-<p>If you have not programmed before, you need a crash course. There are many online, and we recommend <a class="reference external" href="https://learnxinyminutes.com/docs/python/">https://learnxinyminutes.com/docs/python/</a> . It is very short, and starts very simple. At first, focus on the early parts and don’t worry too much about the sections beyond “6. Classes”.</p>
-<section id="exercises">
-<h2>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">¶</a></h2>
-<blockquote>
-<div><p><em>Task:</em> Generate a two random arrays of size <span class="math notranslate nohighlight">\(n\)</span> each of integers between 1 and 6 (corresponding to <span class="math notranslate nohighlight">\(n\)</span> throws of two dice) and determine the histogram of the sum of the dice throws.</p>
-<p><em>Task:</em> Implement a Low-Pass Filter as described in the <a class="reference internal" href="ev3-sensors.html"><span class="doc">EV3 Sensors Introduction and Low-Pass Filters</span></a> page.</p>
-</div></blockquote>
-</section>
+  <section id="further-reading">
+<h1>Further Reading<a class="headerlink" href="#further-reading" title="Link to this heading">¶</a></h1>
+<p>Now you have tried and tested some features of the motors and sensors, but there is much more you can do with these.
+On top of and aiding your trial and error process, reading the documentation of the python package accompanying the devices.</p>
+<p>You can find the documentation at <a class="reference external" href="https://pybricks.com/ev3-micropython">https://pybricks.com/ev3-micropython</a> , particularly:</p>
+<ul class="simple">
+<li><p>the programmable brick: <a class="reference external" href="https://pybricks.com/ev3-micropython/hubs.html">https://pybricks.com/ev3-micropython/hubs.html</a></p></li>
+<li><p>the motors &amp; sensors: <a class="reference external" href="https://pybricks.com/ev3-micropython/ev3devices.html">https://pybricks.com/ev3-micropython/ev3devices.html</a></p></li>
+</ul>
+<p>plus see the other sections of the documentation for useful code.</p>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="inventory.html" class="btn btn-neutral float-left" title="LEGO Inventory" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ev3-setup.html" class="btn btn-neutral float-right" title="EV3 Setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ev3-sensors.html" class="btn btn-neutral float-left" title="EV3 Sensors Introduction and Low-Pass Filters" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pid.html" class="btn btn-neutral float-right" title="PID Controller" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
